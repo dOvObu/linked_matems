@@ -23,13 +23,13 @@ files: [
             title: '===----  [окрстности]  ----==='
         ,
             title: 'ε-окрестность вещественной точки x0'
-            url:  ''
+            url:  'analysis_0'
         ,
             title: 'ε-окрестность +∞'
-            url:  ''
+            url:  'analysis_1'
         ,
             title: 'ε-окрестность -∞'
-            url:  ''
+            url:  'analysis_2'
         ,
             title: 'ε-окрестность ∞'
             url:  ''
@@ -77,4 +77,19 @@ files: [
     name: 'linear'
     title: 'Линейная'
     pos: 'navbar'
+    ,
+    name: 'analysis_0'
+    title: 'Проверка'
+    data: [
+        title: 'ε-окрестность вещественной точки x0'
+        text: '''
+        проверка текстом
+        '''
+    ]
+    ,
+    name: 'analysis_1'
+    title: 'Проверка 1'
+    ,
+    name: 'analysis_2'
+    title: 'Проверка 2'
     ]

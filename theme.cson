@@ -86,7 +86,7 @@ main:
             </div>
             """
         active: '<a class="w3-button w3-black" href="#">{0[num]}</a>'
-        inactive: '<a class="w3-button w3-hover-black" href="{0[url]}">{0[num]}</a>'
+        inactive: '<a class="w3-button w3-hover-black" href="{0[url]}.html">{0[num]}</a>'
         
 
 header: """

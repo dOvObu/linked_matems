@@ -23,21 +23,46 @@ height: inherit;
 <div class="w3-top">
     <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
         <a class="w3-bar-item w3-button w3-right w3-hide-large w3-hover-white w3-large w3-theme-l1" href="javascript:void(0)" onclick="w3_open()"><i class="fa fa-bars"></i></a>
-        <a href="index.html" class="w3-bar-item w3-button w3-theme-l1">Корень</a>
-        <a href="analysis.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Анализ</a>
+        <a href="index.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Корень</a>
+        <a href="analysis.html" class="w3-bar-item w3-button w3-theme-l1">Анализ</a>
         <a href="logica.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Логика</a>
         <a href="probability.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Вероятность</a>
         <a href="linear.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Линейная</a>
     </div>
-</div><!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Разделы</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#subtitle0">Из курса Мкртчяна П.З.</a>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div><!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
     <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-    <h1 class="w3-text-teal"><a name="subtitle0"></a>Добро пожаловать!</h1>
-    <p>Это главная страница.
-Ничего содержательного, только ссылки на разные
-разделы. Сайт нужен только для того чтобы связать
-некоторые конспекты.</p>
+    <h1 class="w3-text-teal"><a name="subtitle0"></a>Из курса Мкртчяна П.З.</h1>
+    <p><ul style="list-style-type:disc;">
+    <li><a href="#">===----  [окрстности]  ----===</a></li>
+    <li><a href="analysis_0.html">ε-окрестность вещественной точки x0</a></li>
+    <li><a href="analysis_1.html">ε-окрестность +∞</a></li>
+    <li><a href="analysis_2.html">ε-окрестность -∞</a></li>
+    <li><a href=".html">ε-окрестность ∞</a></li>
+    <li><a href=".html">внутренняя точка множества А ⊂ R</a></li>
+    <li><a href=".html">открытое множество А</a></li>
+    <li><a href=".html">окрестность точки x0</a></li>
+    <li><a href=".html">граничная точка множества А ⊂ R</a></li>
+    <li><a href=".html">замыкание множества А</a></li>
+    <li><a href=".html">замкнутое множество</a></li>
+    <li><a href=".html">предельная точка множества А ⊂ R</a></li>
+    <li><a href=".html">изолированная точка множества А ⊂ R</a></li>
+    <li><a href="#">===----  [пределы]  ----===</a></li>
+    <li><a href="#">===----  [непрерывные]  ----===</a></li>
+    <li><a href="#">===----  [замечательные]  ----===</a></li>
+<ul></p>
     </div>
     <div class="w3-third w3-container">
 

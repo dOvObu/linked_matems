@@ -1,4 +1,4 @@
-import requests, re, csv, cson
+import requests, re, csv, cson, math
 
 list_of_lists = []
 
@@ -11,29 +11,29 @@ with open('theme.cson', 'rb') as fin:
 
 for _file in model['files']:
     with open(_file['name']+'.html', 'wb') as fout:
-
+        fout.write(theme['header'].encode())
         # <!-- Navbar -->
         navbar = theme['navbar']
 
-        tabs = '\n'.join([navbar[(''if _file['title']==file_['title']else'in')+'active'].format({
+        tabs = '\n        '.join([navbar[(''if _file['title']==file_['title']else'in')+'active'].format({
                 'name' : file_['title']
             ,   'url'  : file_['name']
             }) for file_ in model['files'] if ('pos' in file_.keys() and file_['pos']=='navbar')])
-
-        #fout.write(navbar.format({'tabs': tabs}))
+        
+        fout.write(navbar['template'].format({'tabs': tabs}).encode())
 
         # <!-- Sidebar -->
         sidebar = theme['sidebar']
         links = [data['title'] for data in _file['data'] if 'text' not in data.keys()]\
                     if 'data' in _file.keys() else None
-
         if links:
             links = '\n'.join(sidebar['link'].format({'url': '#subtitle'+str(idx),'name' : x}) for idx, x in enumerate(links))
-            #fout.write( '\n\n' + sidebar['template'].format({'title': 'Разделы', 'links': links}) )
+            fout.write( ('\n\n' + sidebar['template'].format({'title': 'Разделы', 'links': links})).encode() )
             
         # <!-- Main content -->
         main_content = theme['main']
         blocks = ''
+        pagination = ''
         if 'data' in _file.keys():
             for jdx, data in enumerate(_file['data']):
                 
@@ -50,23 +50,23 @@ for _file in model['files']:
                 r_subblock = right_subblock['theme'].format({'subblocks': (right_subblock['small'].format(small_img) if small_img else '') + (right_subblock['big'].format(big_img) if big_img else '')})
                 
                 if 'links' in data_keys:
-                    link_template = '<li><a href="{0[url]}">{0[name]}</a></li>'
+                    link_template = '    <li><a href="{0[url]}">{0[name]}</a></li>'
                     
                     text = '<ul style="list-style-type:disc;">\n{}\n<ul>'.format(\
                         '\n'.join([link_template.format({
                                 'name': x['title']
                             ,   'url' : x['url']+'.html' if 'url' in x.keys() else '#'
                             }) for x in data['links'] ])) + (text if text else '')
-                    list_of_lists.append([x['url'] for x in data['links'] if 'url' in data_keys])
+                    list_of_lists.append([x['url'] for x in data['links'] if 'url' in x.keys()])
 
                 if text and not text_:
-                    blocks += main_content['block'].format({
+                    blocks += main_content['block64'].format({
                         'title': title
                     ,   'text': text
                     ,   'subblocks': r_subblock
                     })
                 elif text_ and not text:
-                    blocks += main_content['block64'].format({
+                    blocks += main_content['block'].format({
                         'title': title
                     ,   'text': text_
                     ,   'subblocks': r_subblock
@@ -77,18 +77,32 @@ for _file in model['files']:
                     ,   'text': text + '\n\n' + text_
                     ,   'subblocks': r_subblock
                     })
-                the_list = None
-                for _list in list_of_lists:
-                    if _file['name'] in _list:
-                        the_list = _list
-                        break
+        the_list = None
+        for _list in list_of_lists:
+            if _file['name'] in _list:
+                the_list = _list
+                break
 
-                if the_list:
-                    idx = the_list.index(_file['name'])
-                    L = len(the_list) #    [0      ]
+        if the_list:
+            pagination = main_content['pagination']
+            S = 7
+            Shlf = math.floor(0.5 * float(S))
+            idx = the_list.index(_file['name'])
+            L = len(the_list)
+            start = 0
+            end = S
 
+            if 0 > idx - Shlf:
+                end = min(L,S)
+            elif idx + Shlf + 1 > L:
+                start = max(0,L-S)
+            else:
+                start = idx - Shlf
+                end = idx + Shlf + 1
+            
+            pages = '\n        '.join([pagination[('' if x == idx else 'in')+'active'].format({'url':the_list[x], 'num':x}) for x in range(start, end)])
+            pagination = pagination['template'].format({'pages': pages})
 
-        #fout.write(main_content['template'].format({'blocks': blocks, 'pagination': ''}))
-        print(blocks)
+        fout.write(main_content['template'].format({'blocks': blocks, 'pagination': pagination}).encode())
 
-        #fout.write(theme['footer'])
+        fout.write(theme['footer'].encode())
