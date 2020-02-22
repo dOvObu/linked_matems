@@ -1,6 +1,8 @@
 files: [
     name: 'index'
     title: 'Корень'
+
+    pos: 'navbar'
     data: [
         title: 'Добро пожаловать!'
         text: """
@@ -13,58 +15,48 @@ files: [
     ,
     name: 'analysis'
     title: 'Анализ'
+
+    pos: 'navbar'
     data: [
         title: 'Из курса Мкртчяна П.З.'
         links: [
             title: '===----  [окрстности]  ----==='
         ,
             title: 'ε-окрестность вещественной точки x0'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'ε-окрестность +∞'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'ε-окрестность -∞'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'ε-окрестность ∞'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'внутренняя точка множества А ⊂ R'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'открытое множество А'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'окрестность точки x0'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'граничная точка множества А ⊂ R'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'замыкание множества А'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'замкнутое множество'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'предельная точка множества А ⊂ R'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: 'изолированная точка множества А ⊂ R'
-            text:  '''
-                '''
+            url:  ''
         ,
             title: '===----  [пределы]  ----==='
         ,
@@ -76,10 +68,13 @@ files: [
     ,
     name: 'logica'
     title: 'Логика'
+    pos: 'navbar'
     ,
     name: 'probability'
     title: 'Вероятность'
+    pos: 'navbar'
     ,
     name: 'linear'
     title: 'Линейная'
+    pos: 'navbar'
     ]

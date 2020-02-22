@@ -1,5 +1,6 @@
 import requests, re, csv, cson
 
+list_of_lists = []
 
 with open('src.cson', 'rb') as fin:
     model = cson.load(fin)
@@ -17,7 +18,7 @@ for _file in model['files']:
         tabs = '\n'.join([navbar[(''if _file['title']==file_['title']else'in')+'active'].format({
                 'name' : file_['title']
             ,   'url'  : file_['name']
-            }) for file_ in model['files']])
+            }) for file_ in model['files'] if ('pos' in file_.keys() and file_['pos']=='navbar')])
 
         #fout.write(navbar.format({'tabs': tabs}))
 
@@ -33,11 +34,61 @@ for _file in model['files']:
         # <!-- Main content -->
         main_content = theme['main']
         blocks = ''
-        if 'links' in _file['data'].keys():
-            for link in _file['data']['links']:
-                _file['data']['links'] # список ссылок и содержимого страниц
+        if 'data' in _file.keys():
+            for jdx, data in enumerate(_file['data']):
+                
+                data_keys = data.keys()
+                title     = data['title']     if 'title'     in data_keys else ''
+                text      = data['text']      if 'text'      in data_keys else None
+                text_     = data['text_']     if 'text_'     in data_keys else None
+                small_img = data['small_img'] if 'small_img' in data_keys else None
+                big_img   = data['big_img']   if 'big_img'   in data_keys else None
+
+                title = '<a name="subtitle{}"></a>'.format(jdx) + title
+
+                right_subblock = main_content['right_subblock']
+                r_subblock = right_subblock['theme'].format({'subblocks': (right_subblock['small'].format(small_img) if small_img else '') + (right_subblock['big'].format(big_img) if big_img else '')})
+                
+                if 'links' in data_keys:
+                    link_template = '<li><a href="{0[url]}">{0[name]}</a></li>'
+                    
+                    text = '<ul style="list-style-type:disc;">\n{}\n<ul>'.format(\
+                        '\n'.join([link_template.format({
+                                'name': x['title']
+                            ,   'url' : x['url']+'.html' if 'url' in x.keys() else '#'
+                            }) for x in data['links'] ])) + (text if text else '')
+                    list_of_lists.append([x['url'] for x in data['links'] if 'url' in data_keys])
+
+                if text and not text_:
+                    blocks += main_content['block'].format({
+                        'title': title
+                    ,   'text': text
+                    ,   'subblocks': r_subblock
+                    })
+                elif text_ and not text:
+                    blocks += main_content['block64'].format({
+                        'title': title
+                    ,   'text': text_
+                    ,   'subblocks': r_subblock
+                    })
+                elif text_ and text:
+                    blocks += main_content['block64'].format({
+                        'title': title
+                    ,   'text': text + '\n\n' + text_
+                    ,   'subblocks': r_subblock
+                    })
+                the_list = None
+                for _list in list_of_lists:
+                    if _file['name'] in _list:
+                        the_list = _list
+                        break
+
+                if the_list:
+                    idx = the_list.index(_file['name'])
+                    L = len(the_list) #    [0      ]
 
 
-
+        #fout.write(main_content['template'].format({'blocks': blocks, 'pagination': ''}))
+        print(blocks)
 
         #fout.write(theme['footer'])
