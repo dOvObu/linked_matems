@@ -10,7 +10,7 @@ with open('theme.cson', 'rb') as fin:
 
 
 for _file in model['files']:
-    with open(_file['name']+'.html', 'wb') as fout:
+    with open('../'+_file['name']+'.html', 'wb') as fout:
         fout.write(theme['header'].encode())
         # <!-- Navbar -->
         navbar = theme['navbar']
@@ -43,12 +43,13 @@ for _file in model['files']:
                 
                 if 'links' in data_keys:
                     link_template = '    <li><a href="{0[url]}">{0[name]}</a></li>'
+                    subt_template = '    <h5>{0[name]}</h5>'
                     
                     text = '<ul style="list-style-type:disc;">\n{}\n<ul>'.format(\
-                        '\n'.join([link_template.format({
+                        '\n'.join([(link_template.format({
                                 'name': x['title']
-                            ,   'url' : x['url']+'.html' if 'url' in x.keys() else '#'
-                            }) for x in data['links'] ])) + (text if text else '')
+                            ,   'url' : x['url']+'.html'
+                            }) if ('url' in x.keys()) else subt_template.format({'name': x['title']})) for x in data['links'] ])) + (text if text else '')
                     list_of_lists.append([x['url'] for x in data['links'] if 'url' in x.keys()])
 
                 if text and not text_:

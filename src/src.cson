@@ -20,10 +20,10 @@ files: [
     data: [
         title: 'Из курса Мкртчяна П.З.'
         links: [
-            title: '===----  [окрстности]  ----==='
+            title: 'Окрстности'
         ,
-            title: 'ε-окрестность вещественной точки x0'
-            url:  'analysis_0'
+            title: '\\(\\varepsilon\\)-окрестность вещественной точки \\(x_0\\)'
+            url:  'locality_x0'
         ,
             title: 'ε-окрестность +∞'
             url:  'analysis_1'
@@ -58,11 +58,11 @@ files: [
             title: 'изолированная точка множества А ⊂ R'
             url:  ''
         ,
-            title: '===----  [пределы]  ----==='
+            title: 'Пределы'
         ,
-            title: '===----  [непрерывные]  ----==='
+            title: 'Непрерывные функции'
         ,
-            title: '===----  [замечательные]  ----==='
+            title: 'Замечательные пределы'
             ]
         ]
     ,
@@ -78,25 +78,27 @@ files: [
     title: 'Линейная'
     pos: 'navbar'
     ,
+
+
     name: 'mathbbN'
     title: 'Натуральные'
     data: [
         title: 'Натуральные \\(\\mathbb{N}\\)'
-        text: '\\(\\mathbb{N}atural\\)ьные числа: \\(0,1,2,3,4,5,6,7,8 ...\\)<br> Отвечают на вопрос: \'сколько?\''
+        text: '\\(\\mathbb{N}atural\\)ьные числа: \\(0,1,2,3,4,5,6,7,8 ...\\)<br> Отвечают на вопрос: \'сколько есть?\'<br>К примеру, сколько сейчас в комнате крокодилов?'
     ]
     ,
     name: 'mathbbZ'
     title: 'Целые'
     data: [
         title: 'Целые \\(\\mathbb{Z}\\)'
-        text: '\\(die\\) \\(\\mathbb{Z}ahl\\) [диэ цайль] значит просто -- число:  \\(... -3,-2,-1,0,1,2,3 ...\\)<br> Отвечают на вопросы: \'сколько должен?\' и <a href="mathbbN.html">\'сколько?\'</a>'
+        text: '\\(die\\) \\(\\mathbb{Z}ahl\\) [диэ цайль] значит просто -- число:  \\(... -3,-2,-1,0,1,2,3 ...\\)<br> Отвечают на вопросы: \'сколько должен?\' и <a href="mathbbN.html">\'сколько есть?\'</a>'
     ]
     ,
     name: 'mathbbQ'
     title: 'Рациональные'
     data: [
         title: 'Рациональные \\(\\mathbb{Q}\\)'
-        text: '\\(\\mathbb{Q}uotient\\) значит -- доля/отношение/частное: \\(...-\\frac{2}{4},-\\frac{1}{4},\\frac{0}{4},\\frac{1}{4},\\frac{2}{4},\\frac{3}{4},\\frac{4}{4}...\\)<br> Выражают пропорции и отвечают на вопрос: \'<a href="mathbbZ.html">Сколько я должен/получу</a> от <a href="mathbbN.html">скольких</a> частей?\''
+        text: '\\(\\mathbb{Q}uotient\\) значит -- доля/отношение/частное: \\(...-\\frac{2}{4},-\\frac{1}{4},\\frac{0}{4},\\frac{1}{4},\\frac{2}{4},\\frac{3}{4},\\frac{4}{4}...\\)<br> Выражают пропорции и отвечают на вопрос: \'<a href="mathbbZ.html">Сколько я должен/сколько есть</a> из <a href="mathbbN.html">скольких</a> частей?\''
     ]
     ,
     name: 'mathbbI'
@@ -110,7 +112,7 @@ files: [
     title: 'Вещественные'
     data: [
         title: 'Вещественные \\(\\mathbb{R}\\)'
-        text: '\\(\\mathbb{R}eal\\)ьные/вещественные числа<br> Выражают <a href="mathbbQ.html">познаваемые</a> и <a href="mathbbI.html">непознаваемые</a> до конца пропорции.<br><center>\\(\\mathbb{R}=\\) <a href="mathbbQ.html">\\(\\mathbb{Q}\\)</a> <a href="cup.html">\\(\\cup\\)</a> <a href="mathbbI.html">\\(\\mathbb{I}\\)</a></center><br>'
+        text: '\\(\\mathbb{R}eal\\)ьные/вещественные числа<br> Выражают пропорции <a href="mathbbQ.html">познаваемые</a> и <a href="mathbbI.html">непознаваемые</a> до конца.<br><center>\\(\\mathbb{R}=\\) <a href="mathbbQ.html">\\(\\mathbb{Q}\\)</a> <a href="cup.html">\\(\\cup\\)</a> <a href="mathbbI.html">\\(\\mathbb{I}\\)</a></center><br>'
     ]
     ,
     name: 'in'
@@ -147,7 +149,7 @@ files: [
         title: 'Определение новых множеств, собирая в одно'
         text: '''
             Из множеств \\(a_0, a_1, a_2 ... a_n\\) можно собрать множество \\(\\{a_0, a_1, a_2 ... a_n\\}\\) про которое Истинно:<br>
-            <a href="forall.html">\\(\\forall x.\\)</a>\\((x\\in \\{a_0...a_n\\}\\iff)x=a_0\\)
+            <a href="forall.html">\\(\\forall x.\\)</a>\\((x\\in \\{a_0...a_n\\}\\) <a href="iff.html">\\(\\iff x=a_0\\)</a> <a href="lor.html">\\(\\lor\\)</a> \\(x=a_1\\)
             '''
     ]
     ,
@@ -172,13 +174,17 @@ files: [
         text: '<center> \\(A\\setminus B =\\) \\(\\{ x\\) <a href="in.html">\\(\\in\\)</a> \\(A\\) <a href="set_constr_2.html">\\(: x\\notin B \\}\\) </center>'
     ]
     ,
-    name: 'analysis_0'
-    title: 'Проверка'
+    name: 'locality_x0'
+    title: 'Окрестность точки x0'
     data: [
         title: 'ε-окрестность вещественной точки \\(x_0\\)'
         text: '''
-        $${{ U_\\varepsilon(x) = \\{ x : |x - x_0| < \\varepsilon \\} , при \\varepsilon > 0 }}$$<br>
-        ε-окрестность точки \\(x_0\\) <a href="in.html">\\(\\in\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a> 
+        <center>\\(U_\\varepsilon(x) =\\) <a href="set_constr_2.html">\\(\\{ x :\\)</a> <a href="https://ru.wikipedia.org/wiki/%D0%A0%D0%B0%D1%81%D1%81%D1%82%D0%BE%D1%8F%D0%BD%D0%B8%D0%B5">\\(|x - x_0|\\)</a> \\(< \\varepsilon\\) <a href="set_constr_2.html">\\(\\}\\)</a>\\(, при \\varepsilon > 0\\)</center><br>
+        Множество \\(U_\\varepsilon(x)\\), состоящее из \\(x\\)-ов (расстояние от которых, до \\(x_0\\), меньше чем положительная \\(\\varepsilon\\)),<br>
+        называется \\(\\varepsilon\\)-окрестностью точки \\(x_0\\) <a href="in.html">\\(\\in\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a><br>
+        <br>
+        Так можно рисовать круги во <a href="https://www.shadertoy.com/new">фрагментных шейдерах</a>:<br><br>
+        <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/tlVSzw?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
         '''
     ]
     ,
