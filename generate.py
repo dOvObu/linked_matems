@@ -21,15 +21,7 @@ for _file in model['files']:
             }) for file_ in model['files'] if ('pos' in file_.keys() and file_['pos']=='navbar')])
         
         fout.write(navbar['template'].format({'tabs': tabs}).encode())
-
-        # <!-- Sidebar -->
-        sidebar = theme['sidebar']
-        links = [data['title'] for data in _file['data'] if 'text' not in data.keys()]\
-                    if 'data' in _file.keys() else None
-        if links:
-            links = '\n'.join(sidebar['link'].format({'url': '#subtitle'+str(idx),'name' : x}) for idx, x in enumerate(links))
-            fout.write( ('\n\n' + sidebar['template'].format({'title': 'Разделы', 'links': links})).encode() )
-            
+  
         # <!-- Main content -->
         main_content = theme['main']
         blocks = ''
@@ -102,6 +94,17 @@ for _file in model['files']:
             
             pages = '\n        '.join([pagination[('' if x == idx else 'in')+'active'].format({'url':the_list[x], 'num':x}) for x in range(start, end)])
             pagination = pagination['template'].format({'pages': pages})
+
+
+        # <!-- Sidebar -->
+        sidebar = theme['sidebar']
+        links = [data['title'] for data in _file['data'] if 'text' not in data.keys()] if 'data' in _file.keys() else None
+        
+        if links:
+            links = '\n'.join(sidebar['link'].format({'url': '#subtitle'+str(idx),'name' : x}) for idx, x in enumerate(links))
+            fout.write( ('\n\n' + sidebar['template'].format({'title': 'Разделы', 'links': links})).encode() )
+        
+        
 
         fout.write(main_content['template'].format({'blocks': blocks, 'pagination': pagination}).encode())
 
