@@ -26,10 +26,10 @@ files: [
             url:  'locality_x0'
         ,
             title: 'ε-окрестность +∞'
-            url:  'analysis_1'
+            url:  'locality_plus_inf'
         ,
             title: 'ε-окрестность -∞'
-            url:  'analysis_2'
+            url:  'locality_minus_inf'
         ,
             title: 'ε-окрестность ∞'
             url:  ''
@@ -140,7 +140,7 @@ files: [
     title: 'Эквивалентно'
     data: [
         title: 'Эквивалентность (A -- тогда и только тогда, когда B)'
-        text: '\\((A\\Leftrightarrow B)\\) <a href="iff.html">\\(\\iff\\)</a> \\((A\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(B\\) <a href="land.html">\\(\\land\\)</a> \\(B\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(A)\\)'
+        text: '\\((A\\Leftrightarrow B)\\) <a href="iff.html">\\(\\iff\\)</a> \\((A\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(B\\) <a href="land.html">\\(\\land\\)</a> \\(B\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(A)\\)<br>Договоримся, что Истина -- это 1, а Ложь -- это 0, т.е. Ложь ничтожна и Истина больше чем Ложь.<br>Тогда эквивалентность работает так:<br><br><img src="https://spravochnick.ru/assets/files/articles/inf56.png" alt="таблица истинности для эквивалентности">'
     ]
     ,
     name: 'land'
@@ -235,13 +235,36 @@ files: [
         <a href="set.html">Множество</a> <a href="func.html">\\(U_\\varepsilon(x)\\)</a>, состоящее из <a href="mathbbR.html">\\(x\\)</a>-ов, расстояние от которых, до <a href="mathbbR.html">\\(x_0\\)</a> --  меньше чем положительная <a href="mathbbR">\\(\\varepsilon\\)</a>,<br>
         называется <a href="mathbbR">\\(\\varepsilon\\)</a>-окрестностью точки <a href="mathbbR.html">\\(x_0\\)</a> <a href="in.html">\\(\\in\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a><br>
         <br>
-        Так можно рисовать круги во <a href="https://www.shadertoy.com/new">фрагментных шейдерах</a>:<br><br>
+        Так можно рисовать круги во <a href="https://ru.wikipedia.org/wiki/%D0%A8%D0%B5%D0%B9%D0%B4%D0%B5%D1%80">фрагментных шейдерах</a>:<br><br>
         <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/tlVSzw?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
         '''
     ]
     ,
-    name: 'analysis_1'
-    title: 'Проверка 1'
+    name: 'locality_plus_inf'
+    title: 'Окрестность плюс бесконечности'
+    data: [
+        title: 'ε-окрестность +∞'
+        text: '''
+        <center><a href="func.html">\\(U_\\varepsilon(+\\infty)\\)</a> \\(=\\) <a href="set_constr_2.html">\\(\\{\\)</a> <a href="mathbbR.html">\\(x\\)</a> <a href="set_constr_2.html">\\(:\\)</a> <a href="mathbbR.html">\\(x\\)</a> \\(>\\) <a href="mathbbR.html">\\(\\varepsilon\\)</a> <a href="set_constr_2.html">\\(\\}\\)</a> </center><br>
+        <a href="set.html">Множество</a> <a href="func.html">\\(U_\\varepsilon(+\\infty)\\)</a>, состоящее из <a href="mathbbR.html">\\(x\\)</a>-ов, которые больше чем <a href="mathbbR">\\(\\varepsilon\\)</a>,<br>
+        называется <a href="mathbbR">\\(\\varepsilon\\)</a>-окрестностью плюс бесконечности<br>
+        <br>
+        <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/tlKSWR?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+        '''
+    ]
+    ,
+    name: 'locality_minus_inf'
+    title: 'Окрестность минус бесконечности'
+    data: [
+        title: 'ε-окрестность -∞'
+        text: '''
+        <center><a href="func.html">\\(U_\\varepsilon(-\\infty)\\)</a> \\(=\\) <a href="set_constr_2.html">\\(\\{\\)</a> <a href="mathbbR.html">\\(x\\)</a> <a href="set_constr_2.html">\\(:\\)</a> <a href="mathbbR.html">\\(x\\)</a> \\(<\\) <a href="mathbbR.html">\\(\\varepsilon\\)</a> <a href="set_constr_2.html">\\(\\}\\)</a> </center><br>
+        <a href="set.html">Множество</a> <a href="func.html">\\(U_\\varepsilon(-\\infty)\\)</a>, состоящее из <a href="mathbbR.html">\\(x\\)</a>-ов, которые меньше чем <a href="mathbbR">\\(\\varepsilon\\)</a>,<br>
+        называется <a href="mathbbR">\\(\\varepsilon\\)</a>-окрестностью минус бесконечности<br>
+        <br>
+        <iframe width="640" height="360" frameborder="0" src="https://www.shadertoy.com/embed/wtKXWR?gui=true&t=10&paused=true&muted=false" allowfullscreen></iframe>
+        '''
+    ]
     ,
     name: 'analysis_2'
     title: 'Проверка 2'
