@@ -89,7 +89,7 @@ for _file in model['files']:
                 end = min(L,S)
             elif idx + Shlf + 1 > L:
                 start = max(0,L-S)
-                end = S
+                end = L
             else:
                 start = idx - Shlf
                 end = idx + Shlf + 1
