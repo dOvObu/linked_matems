@@ -140,7 +140,7 @@ files: [
     title: 'Эквивалентно'
     data: [
         title: 'Эквивалентность (A -- тогда и только тогда, когда B)'
-        text: '\\((A\\Leftrightarrow B)\\) <a href="iff.html">\\(\\iff\\)</a> \\((A\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(B\\) <a href="land.html">\\(\\land\\)</a> \\(B\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(A)\\)<br>Договоримся, что Истина -- это 1, а Ложь -- это 0, т.е. Ложь ничтожна и Истина больше чем Ложь.<br>Тогда эквивалентность работает так:<br><br><img src="https://spravochnick.ru/assets/files/articles/inf56.png" alt="таблица истинности для эквивалентности">'
+        text: '\\((A\\)<a href="iff.html">\\(\\Leftrightarrow\\)</a> \\(B)\\) <a href="iff.html">\\(\\iff\\)</a> \\((A\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(B\\) <a href="land.html">\\(\\land\\)</a> \\(B\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(A)\\)<br>Договоримся, что Истина -- это \\(1\\), а Ложь -- это \\(0\\), т.е. Ложь ничтожна, а Истина больше чем Ложь.<br>Тогда эквивалентность работает так:<br><br><img src="https://spravochnick.ru/assets/files/articles/inf56.png" alt="таблица истинности для эквивалентности">'
     ]
     ,
     name: 'land'
