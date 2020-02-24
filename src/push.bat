@@ -1,0 +1,1 @@
+python generate.py && cd .. && git add -A && git commit -m "update" && git push && cd src
