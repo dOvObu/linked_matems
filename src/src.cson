@@ -280,11 +280,11 @@ files: [
     ]
     ,
     name: 'internal_point_of_set'
-    title: 'Внутренняя точка множества A'
+    title: 'Внутренняя точка множества A ⊂ R'
     data: [
         title: 'Внутренняя точка множества А ⊂ R'
         text: '''
-            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется внутренней точкой <a href="set.html">множества</a> \\(A\\), если существует <a href="locality_x0"> \\(\\varepsilon\\) точки \\(x_0\\) </a>, <a href="in.html">содержащейся</a> во <a href="set.html">множестве</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbbR\\)</a>
+            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется внутренней точкой <a href="set.html">множества</a> \\(A\\), если существует <a href="locality_x0"> \\(\\varepsilon\\) точки \\(x_0\\) </a>, <a href="in.html">содержащейся</a> во <a href="set.html">множестве</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a>
             '''
     ]
     ,
@@ -293,7 +293,7 @@ files: [
     data: [
         title: 'Открытое множество А'
         text: '''
-            <a href="set.html">Множество</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbbR\\)</a> называется открытым, если <a href="forall.html">всякая</a> её <a href="mathbbR">точка</a> <a href="in.html">пренадлежит</a> этому <a href="set.html">множеству</a> вместе с некоторой <a href="mathbbR.html">\\(\\varepsilon\\)</a>-окрестностью.<br>К примеру, множество точек яблока, не считая кожуры -- это открытое множество.
+            <a href="set.html">Множество</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a> называется открытым, если <a href="forall.html">всякая</a> её <a href="mathbbR">точка</a> <a href="in.html">пренадлежит</a> этому <a href="set.html">множеству</a> вместе с некоторой <a href="mathbbR.html">\\(\\varepsilon\\)</a>-окрестностью.<br>К примеру, множество точек яблока, не считая кожуры -- это открытое множество.
             '''
     ]
     ,
@@ -312,7 +312,7 @@ files: [
     data: [
         title: 'Граничная точка множества А ⊂ R'
         text: '''
-            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется граничной <a href="mathbbR.html">точкой</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbbR\\)</a>, если <a href="forall.html">всякая</a> <a href="locality_x0">окрестность этой точки</a> содержит точки как <a href="in.html">из</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, так и не принадлижащих к <a href="set.html">множеству</a> <a href="set.html">\\(A\\)</a><br>
+            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется граничной <a href="mathbbR.html">точкой</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a>, если <a href="forall.html">всякая</a> <a href="locality_x0">окрестность этой точки</a> содержит точки как <a href="in.html">из</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, так и не принадлижащих к <a href="set.html">множеству</a> <a href="set.html">\\(A\\)</a><br>
             К примеру, по одну сторону <a href="https://www.poedim.ru/content/1230-polezna-li-kozhura-yabloka">кожуры яблока</a>, находится <a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE">яблоко</a>, а по другую, яблока нет. Получается, что точка кожуры -- граничная точка яблока.<br>
             Или ещё, по одну сторону слоя воска на яблоке, находится яблоко, а по другуя, яблока нет. Получается, что точка слоя воска -- тоже граничная точка яблока, не смотря на то, что воск -- это не часть яблока ¯\_(ツ)_/¯
             '''
