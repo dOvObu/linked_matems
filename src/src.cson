@@ -50,13 +50,13 @@ files: [
             url:  'closure_of_set'
         ,
             title: 'замкнутое множество'
-            url:  ''
+            url:  'closed_set'
         ,
             title: 'предельная точка множества А ⊂ R'
-            url:  ''
+            url:  'limit_point'
         ,
             title: 'изолированная точка множества А ⊂ R'
-            url:  ''
+            url:  'isolated_point'
         ,
             title: 'Пределы'
         ,
@@ -330,6 +330,36 @@ files: [
             К примеру, замыканием <a href="set.html">множества</a> точек яблока, будет всё яблоко включая кожуру, плюс вся та дрянь, которой это яблоко натёрто
             '''
     ]
+    ,
+    name: 'closed_set'
+    title: 'Замыкнутое множество'
+    data: [
+        title: 'Замыкнутое множество'
+        text: '''
+            Если <a href="set.html">\\(A\\)</a> \\(=\\) <a href="closure_of_set.html">\\(\\bar{A}\\)</a>, то <a href="set.html">\\(A\\)</a> называется замкнутым <a href=""set.html>множеством</a>.
+            '''
+    ]
+    ,
+    name: 'limit_point'
+    title: 'Предельная точка'
+    data: [
+        title: 'Предельная точка'
+        text: '''
+            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется предельной точкой <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, если <a href="forall.html">любая</a> её <a href="locality_x0.html">окрестность</a> <a href="in.html">содержит</a> <a href="mathbbR.html">точку</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, отличную от точки <a href="mathbbR.html">\\(x_0\\)</a>
+            '''
+    ]
+    ,
+    name: 'isolated_point'
+    title: 'Изолированная точка'
+    data: [
+        title: 'Замыкнутое множество'
+        text: '''
+            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется изолированной точкой <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, если <a href="mathbbR.html">она</a> <a href="in.html">принадлежит</a> <a href="set.html">множеству</a> и не является его <a href="limit_point.html">предельной точкой</a>.
+            Если <a href="set.html">\\(A\\)</a> \\(=\\) <a href="closure_of_set.html">\\(\\bar{A}\\)</a>, то <a href="set.html">\\(A\\)</a> называется замкнутым <a href=""set.html>множеством</a>.
+            '''
+    ]
+    
+    
     
     
     ]
