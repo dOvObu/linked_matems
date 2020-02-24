@@ -47,7 +47,7 @@ files: [
             url:  'boundary_point'
         ,
             title: 'замыкание множества А'
-            url:  ''
+            url:  'closure_of_set'
         ,
             title: 'замкнутое множество'
             url:  ''
@@ -313,16 +313,21 @@ files: [
         title: 'Граничная точка множества А ⊂ R'
         text: '''
             Точка <a href="mathbbR.html">\\(x_0\\)</a> называется граничной <a href="mathbbR.html">точкой</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a> <a href="subset.html">\\(\\subset\\)</a> <a href="mathbbR.html">\\(\\mathbb{R}\\)</a>, если <a href="forall.html">всякая</a> <a href="locality_x0">окрестность этой точки</a> содержит точки как <a href="in.html">из</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, так и не принадлижащих к <a href="set.html">множеству</a> <a href="set.html">\\(A\\)</a><br>
-            <br>К примеру, по одну сторону <a href="https://www.poedim.ru/content/1230-polezna-li-kozhura-yabloka">кожуры яблока</a>, находится <a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE">яблоко</a>, а по другую, яблока нет. Получается, что точка кожуры -- граничная точка яблока.<br>
-            Или ещё, по одну сторону слоя воска на яблоке, находится яблоко, а по другуя, яблока нет. Получается, что точка слоя воска -- тоже граничная точка яблока, не смотря на то, что воск -- это не часть яблока ¯\_(ツ)_/¯
+            <br>
+            К примеру, по одну сторону <a href="https://www.poedim.ru/content/1230-polezna-li-kozhura-yabloka">кожуры яблока</a>, находится <a href="https://ru.wikipedia.org/wiki/%D0%AF%D0%B1%D0%BB%D0%BE%D0%BA%D0%BE">яблоко</a>, а по другую, яблока нет. Получается, что точка кожуры -- граничная точка яблока.<br>
+            Или ещё, по одну сторону слоя воска на яблоке, находится яблоко, а по другуя, яблока нет. Получается, что точка слоя воска -- тоже граничная точка яблока, не смотря на то, что воск -- это не часть яблока ¯\\_(ツ)_/¯
             '''
     ]
     ,
-    name: ''
-    title: ''
+    name: 'closure_of_set'
+    title: 'Замыкание множества'
     data: [
-        title: ''
+        title: 'Замыкание множества A'
         text: '''
+            Замыканием <a href="set.html">множества</a> <a href="set.html">A</a>, называется <a href="cup.html">объединение</a> <a href="set.html">множества</a> <a href="set.html">A</a> с <a href="set.html">множеством</a> его <a href="boundary_point.html">граничных точек</a>.<br>
+            Для множества A, обозначается как \\(\\bar{A}\\)<br>
+            <br>
+            К примеру, замыканием <a href="set.html">множества</a> точек яблока, будет всё яблоко включая кожуру, плюс вся та дрянь, которой это яблоко натёрто
             '''
     ]
     
