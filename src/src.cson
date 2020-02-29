@@ -554,8 +554,86 @@ files: [
     name:'16_limits'
     title: '16 Определений предела'
     data: [
-        title: '16 Определений предела'
+        title: 'Определения предела'
+        ,
+        title: '\\(a\\) и \\(x_0\\) -- конечные'
         text: '''
+            $$ \\lim_{x\\to x_0} f(x) = a \\iff \\forall\\varepsilon > 0. \\exists\\delta_\\varepsilon. |x - x_0| < \\delta \\Rightarrow |f(x) - a| < \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == +\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to +\\infty} f(x) = a \\iff \\forall\\varepsilon > 0. \\exists\\delta. x > \\delta \\Rightarrow |f(x) - a| < \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == +\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to -\\infty} f(x) = a \\iff \\forall\\varepsilon > 0. \\exists\\delta. x < \\delta \\Rightarrow |f(x) - a| < \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == \\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to \\infty} f(x) = a \\iff \\forall\\varepsilon > 0. \\exists\\delta. |x| > \\delta \\Rightarrow |f(x) - a| < \\varepsilon $$
+            '''
+        ,
+        title: '\\(a == +\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to x_0} f(x) = +\\infty \\iff \\forall\\varepsilon. \\exists\\delta. |x - x_0| < \\delta \\Rightarrow f(x) > \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == +\\infty, a == +\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to +\\infty} f(x) = +\\infty \\iff \\forall\\varepsilon. \\exists\\delta. x > \\delta \\Rightarrow f(x) > \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == -\\infty, a == +\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to -\\infty} f(x) = +\\infty \\iff \\forall\\varepsilon. \\exists\\delta. x < \\delta \\Rightarrow f(x) > \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == \\infty, a == +\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to \\infty} f(x) = +\\infty \\iff \\forall\\varepsilon. \\exists\\delta. |x| > \\delta \\Rightarrow f(x) > \\varepsilon $$
+            '''
+        ,
+        title: '\\(a == -\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to x_0} f(x) = -\\infty \\iff \\forall\\varepsilon. \\exists\\delta. |x - x_0| < \\delta \\Rightarrow f(x) < \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == +\\infty, a == -\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to +\\infty} f(x) = -\\infty \\iff \\forall\\varepsilon. \\exists\\delta. x > \\delta \\Rightarrow f(x) < \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == -\\infty, a == -\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to -\\infty} f(x) = -\\infty \\iff \\forall\\varepsilon. \\exists\\delta. x < \\delta \\Rightarrow f(x) < \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == \\infty, a == -\\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to \\infty} f(x) = -\\infty \\iff \\forall\\varepsilon. \\exists\\delta. |x| > \\delta \\Rightarrow f(x) < \\varepsilon $$
+            '''
+        ,
+        title: '\\(a == \\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to x_0} f(x) = \\infty \\iff \\forall\\varepsilon. \\exists\\delta. |x - x_0| < \\delta \\Rightarrow |f(x)| > \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == +\\infty, a == \\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to +\\infty} f(x) = \\infty \\iff \\forall\\varepsilon. \\exists\\delta. x > \\delta \\Rightarrow |f(x)| > \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == -\\infty, a == \\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to -\\infty} f(x) = \\infty \\iff \\forall\\varepsilon. \\exists\\delta. x < \\delta \\Rightarrow |f(x)| > \\varepsilon $$
+            '''
+        ,
+        title: '\\(x_0 == \\infty, a == \\infty\\)'
+        text: '''
+            $$ \\lim_{x\\to \\infty} f(x) = \\infty \\iff \\forall\\varepsilon. \\exists\\delta. |x| = \\delta \\Rightarrow |f(x)| > \\varepsilon $$
             '''
     ]
     #,

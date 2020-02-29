@@ -29,9 +29,148 @@ height: inherit;
         <a href="probability.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Вероятность</a>
         <a href="linear.html" class="w3-bar-item w3-button w3-hide-small w3-hover-white">Линейная</a>
     </div>
-</div><!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+</div>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+        <i class="fa fa-remove"></i>
+    </a>
+    <h4 class="w3-bar-item"><b>Разделы</b></h4>
+    <a class="w3-bar-item w3-button w3-hover-black" href="#subtitle0">Определения предела</a>
+</nav>
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div><!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
 <div class="w3-main" style="margin-left:250px">
-    
+    <div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle1"></a>\(a\) и \(x_0\) -- конечные</h1>
+    <p>$$ \lim_{x\to x_0} f(x) = a \iff \forall\varepsilon > 0. \exists\delta_\varepsilon. |x - x_0| < \delta \Rightarrow |f(x) - a| < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle2"></a>\(x_0 == +\infty\)</h1>
+    <p>$$ \lim_{x\to +\infty} f(x) = a \iff \forall\varepsilon > 0. \exists\delta. x > \delta \Rightarrow |f(x) - a| < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle3"></a>\(x_0 == +\infty\)</h1>
+    <p>$$ \lim_{x\to -\infty} f(x) = a \iff \forall\varepsilon > 0. \exists\delta. x < \delta \Rightarrow |f(x) - a| < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle4"></a>\(x_0 == \infty\)</h1>
+    <p>$$ \lim_{x\to \infty} f(x) = a \iff \forall\varepsilon > 0. \exists\delta. |x| > \delta \Rightarrow |f(x) - a| < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle5"></a>\(a == +\infty\)</h1>
+    <p>$$ \lim_{x\to x_0} f(x) = +\infty \iff \forall\varepsilon. \exists\delta. |x - x_0| < \delta \Rightarrow f(x) > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle6"></a>\(x_0 == +\infty, a == +\infty\)</h1>
+    <p>$$ \lim_{x\to +\infty} f(x) = +\infty \iff \forall\varepsilon. \exists\delta. x > \delta \Rightarrow f(x) > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle7"></a>\(x_0 == -\infty, a == +\infty\)</h1>
+    <p>$$ \lim_{x\to -\infty} f(x) = +\infty \iff \forall\varepsilon. \exists\delta. x < \delta \Rightarrow f(x) > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle8"></a>\(x_0 == \infty, a == +\infty\)</h1>
+    <p>$$ \lim_{x\to \infty} f(x) = +\infty \iff \forall\varepsilon. \exists\delta. |x| > \delta \Rightarrow f(x) > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle9"></a>\(a == -\infty\)</h1>
+    <p>$$ \lim_{x\to x_0} f(x) = -\infty \iff \forall\varepsilon. \exists\delta. |x - x_0| < \delta \Rightarrow f(x) < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle10"></a>\(x_0 == +\infty, a == -\infty\)</h1>
+    <p>$$ \lim_{x\to +\infty} f(x) = -\infty \iff \forall\varepsilon. \exists\delta. x > \delta \Rightarrow f(x) < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle11"></a>\(x_0 == -\infty, a == -\infty\)</h1>
+    <p>$$ \lim_{x\to -\infty} f(x) = -\infty \iff \forall\varepsilon. \exists\delta. x < \delta \Rightarrow f(x) < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle12"></a>\(x_0 == \infty, a == -\infty\)</h1>
+    <p>$$ \lim_{x\to \infty} f(x) = -\infty \iff \forall\varepsilon. \exists\delta. |x| > \delta \Rightarrow f(x) < \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle13"></a>\(a == \infty\)</h1>
+    <p>$$ \lim_{x\to x_0} f(x) = \infty \iff \forall\varepsilon. \exists\delta. |x - x_0| < \delta \Rightarrow |f(x)| > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle14"></a>\(x_0 == +\infty, a == \infty\)</h1>
+    <p>$$ \lim_{x\to +\infty} f(x) = \infty \iff \forall\varepsilon. \exists\delta. x > \delta \Rightarrow |f(x)| > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle15"></a>\(x_0 == -\infty, a == \infty\)</h1>
+    <p>$$ \lim_{x\to -\infty} f(x) = \infty \iff \forall\varepsilon. \exists\delta. x < \delta \Rightarrow |f(x)| > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div><div class="w3-row w3-padding-64">
+    <div class="w3-twothird w3-container">
+    <h1 class="w3-text-teal"><a name="subtitle16"></a>\(x_0 == \infty, a == \infty\)</h1>
+    <p>$$ \lim_{x\to \infty} f(x) = \infty \iff \forall\varepsilon. \exists\delta. |x| = \delta \Rightarrow |f(x)| > \varepsilon $$</p>
+    </div>
+    <div class="w3-third w3-container">
+
+</div>
+</div>
     <!-- Pagination -->
 <div class="w3-center w3-padding-32">
     <div class="w3-bar">
