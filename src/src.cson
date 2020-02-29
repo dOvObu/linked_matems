@@ -66,6 +66,12 @@ files: [
             title: 'предел'
             url: 'limit'
         ,
+            title: '16 определений предела'
+            url: '16_limits'
+        ,
+            title: ''
+            url: ''
+        ,
             title: 'Непрерывные функции'
         ,
             title: 'Замечательные пределы'
@@ -516,6 +522,7 @@ files: [
     ]
 
     , ### Пределы ###
+
     name: 'limit'
     title: 'Предел'
     data: [
@@ -537,6 +544,25 @@ files: [
             из того, что \\(\\href{mathbbR.html}{x}\\) находится в пересечении области определения \\(\\href{set.html}{A}\\) функции и \\(\\href{locality_x0.html}{U_\\delta(x_0)}\\) <font color="lightgray">(окрестности точки-аргумента)</font><br>
             следует, что \\(\\href{func.html}{f(x)}\\) лежит в \\(\\href{locality_x0.html}{U_\\varepsilon(a)}\\)<font color="lightgray">(окрестности точки-результата вычисления)</font><br>
             <img src="./img/limit.png" alt="limit_graphic"><br>
+            <br>
+            К слову. Как на место \\(\\href{mathbbR.html}{x_0}\\), так и на место \\(\\href{mathbbR.html}{a}\\), можно ставить как конечные значения, так и бесконечные (\\(+\\infty, -\\infty, \\infty\\)).<br>
+            То есть, на \\(2\\) места, \\(4\\) варианта -- это \\(4^2=16\\) вариантов определения в одном!
+            '''
+    ]
+    ,
+    name:'16_limits'
+    title: '16 Определений предела'
+    data: [
+        title: '16 Определений предела'
+        text: '''
+            '''
+    ]
+    ,
+    name: ''
+    title:''
+    data: [
+        title: ''
+        text: '''
             '''
     ]
 
