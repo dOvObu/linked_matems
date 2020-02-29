@@ -63,6 +63,9 @@ files: [
         ,
             title: 'Пределы'
         ,
+            title: 'предел'
+            url: 'limit'
+        ,
             title: 'Непрерывные функции'
         ,
             title: 'Замечательные пределы'
@@ -87,35 +90,71 @@ files: [
     title: 'Натуральные'
     data: [
         title: 'Натуральные \\(\\mathbb{N}\\)'
-        text: '\\(\\mathbb{N}atural\\)ьные числа: \\(0,1,2,3,4,5,6,7,8 ...\\)<br> Отвечают на вопрос: \'сколько есть?\'<br>К примеру, сколько сейчас в комнате крокодилов?'
+        text: '''
+            \\(\\mathbb{N}atural\\)ьные числа: \\(0,1,2,3,4,5,6,7,8 ...\\)
+            <br>
+            Отвечают на вопрос: \'сколько есть?\'
+            <br>
+            К примеру, сколько сейчас в комнате крокодилов?
+            '''
     ]
     ,
     name: 'mathbbZ'
     title: 'Целые'
     data: [
         title: 'Целые \\(\\mathbb{Z}\\)'
-        text: '\\(die\\) \\(\\mathbb{Z}ahl\\) [диэ цайль] значит просто -- число:  \\(... -3,-2,-1,0,1,2,3 ...\\)<br> Отвечают на вопросы: \'сколько должен?\' и <a href="mathbbN.html">\'сколько есть?\'</a>'
+        text: '''
+            \\(die\\) \\(\\mathbb{Z}ahl\\) [диэ цайль] значит просто -- число:
+            \\(... -3,-2,-1,0,1,2,3 ...\\)
+            <br>
+            Отвечают на вопросы: \'сколько должен?\' и
+            <a href="mathbbN.html">\'сколько есть?\'</a>
+            '''
     ]
     ,
     name: 'mathbbQ'
     title: 'Рациональные'
     data: [
         title: 'Рациональные \\(\\mathbb{Q}\\)'
-        text: '\\(\\mathbb{Q}uotient\\) значит -- доля/отношение/частное: \\(...-\\frac{2}{4},-\\frac{1}{4},\\frac{0}{4},\\frac{1}{4},\\frac{2}{4},\\frac{3}{4},\\frac{4}{4}...\\)<br> Выражают пропорции и отвечают на вопрос: \'<a href="mathbbZ.html">Сколько я должен/сколько есть</a> из <a href="mathbbN.html">скольких</a> частей?\''
+        text: '''
+            \\(\\mathbb{Q}uotient\\) значит -- доля/отношение/частное:
+            \\(...-\\frac{2}{4},-\\frac{1}{4},\\frac{0}{4},\\frac{1}{4},\\frac{2}{4},\\frac{3}{4},\\frac{4}{4}...\\)
+            <br>
+            Выражают пропорции и отвечают на вопрос:
+            \'<a href="mathbbZ.html">Сколько я должен/сколько есть</a> из
+            <a href="mathbbN.html">скольких</a> частей?\'
+            '''
     ]
     ,
     name: 'mathbbI'
     title: 'Иррациональные'
     data: [
         title: 'Иррациональные \\(\\mathbb{I}\\)'
-        text: '\\(\\mathbb{I}rrational\\)ьные числа: \\(\\pi, e, e^\\pi, \\psi, \\Psi, \\sqrt{2}...\\)<br> Выражают пропорции, непознаваемые до конца'
+        text: '''
+            \\(\\mathbb{I}rrational\\)ьные числа:
+            \\(\\pi, e, e^\\pi, \\psi, \\Psi, \\sqrt{2}...\\)
+            <br>
+            Выражают пропорции, непознаваемые до конца
+            '''
     ]
     ,
     name: 'mathbbR'
     title: 'Вещественные'
     data: [
         title: 'Вещественные \\(\\mathbb{R}\\)'
-        text: '\\(\\mathbb{R}eal\\)ьные/вещественные числа<br> Выражают пропорции <a href="mathbbQ.html">познаваемые</a> и <a href="mathbbI.html">непознаваемые</a> до конца.<br><center>\\(\\mathbb{R}=\\) <a href="mathbbQ.html">\\(\\mathbb{Q}\\)</a> <a href="cup.html">\\(\\cup\\)</a> <a href="mathbbI.html">\\(\\mathbb{I}\\)</a></center><br>'
+        text: '''
+            \\(\\mathbb{R}eal\\)ьные/вещественные числа
+            <br>
+            Выражают пропорции <a href="mathbbQ.html">познаваемые</a> и
+            <a href="mathbbI.html">непознаваемые</a> до конца.
+            <br>
+            <center>
+                \\(\\mathbb{R}=\\) <a href="mathbbQ.html">\\(\\mathbb{Q}\\)</a>
+                <a href="cup.html">\\(\\cup\\)</a>
+                <a href="mathbbI.html">\\(\\mathbb{I}\\)</a>
+            </center>
+            <br>
+            '''
     ]
     ,
     name: 'in'
@@ -125,11 +164,64 @@ files: [
         text: '<b>Баран</b> -- элемент множества <b>стадо баранов</b>$${{баран\\in стадо баранов}}$$ $${{x\\in A}}$$'
     ]
     ,
+    name: 'free_variable'
+    title: 'Свободная переменная'
+    data: [
+        title: 'Свободная переменная'
+        text: '''
+            Это символ, указывающий на те места в выражении, куда можно подставлять что угодно.<br>
+            Подстановка делается заменой на одну и ту же штуку, всех вхождений символа свободной переменной.<br>
+            <br>
+            <font color="gray">Подробности всё усложняют, но без них ничего не понятно ¯\\_(ツ)_/¯</font>
+            '''
+    ]
+    ,
     name: 'forall'
     title: 'Для всех/для любого x'
     data: [
         title: 'Квантор всеобщности'
-        text: '\\(ll\\forall\\) от слова All -- всё.<br>\\(\\forall x.p(x)\\) Читай: "для всех \\(x\\), верно, что \\(p(x)\\) -- это правда"<br>Эт такая хитрая логическая \'функция\', \'посчитав\' которую, получаем либо логическую Истину, либо логическую Ложь.<br>Аргумент такой логической \'функции\' -- другая логическая \'функция\'.<br>Про свободную переменную \\(x\\), можно сразу писать, откуда она взята<br><center>\\(\\forall x\\) <a href="in.html">\\(\\in\\)</a> \\(A.p(x)\\)</center><br>Иожно ещё дополнять \\(p(x)\\) новым условием, либо фильтром <a href="free_variable.html">свободной переменной</a>, записыв условие/фильтр через вертикальную черту, либо двоеточие:<br><center>\\(\\forall x\\) <a href="in.html">\\(\\in\\)</a> <a href="mathbbN">\\(\\mathbb{N}\\)</a> \\(.p(x)| x < 3\\)</center><br><center>\\(\\forall x\\) <a href="in.html">\\(\\in\\)</a> <a href="mathbbQ">\\(\\mathbb{Q}\\)</a> \\(.p(x): x < 3/2\\)</center><br>Читай "\\(x\\), который меньше трёх" и "\\(x\\), который меньше чем три вторых"<br><br>К примеру, утверждение "Все бабы -- стервы", или "Все женщины обладают свойством стервозности" -- это Ложь, если найдётся хотя бы одна кроткая'
+        text: '''
+            \\(ll\\forall\\) от слова All -- всё.<br>
+            \\(\\forall x.p(x)\\) Читай: "для всех \\(\\href{free_varialbe.html}{x}\\), верно, что \\(\\href{logical_func.html}{p(x)}\\) == Правда"<br>
+            Эт такая хитрая <a href="logical_func.html">логическая \'функция\'</a>, \'посчитав\' которую, получаем либо логическую Истину, либо логическую Ложь.<br>
+            Аргумент такой <a href="logical_func.html">логической \'функции\'</a> -- другая <a href="logical_func.html">логическая \'функция\'</a>.<br>
+
+            На <a href="free_variable.html">свободную переменную</a> \\(\\href{free_variable.html}{x}\\), можно сразу наложить ограничение, вписав откуда она взята
+            $$\\forall x\\href{in.html}{\\in}\\href{set.html}{A}.\\href{logical_func.html}{p(x)}$$
+            Можно ещё дополнять \\(\\href{logical_func.html}{p(x)}\\) условием, чтобы, к примеру, фильтровать значения <a href="free_variable.html">свободой переменной</a>.
+            Для этого достаточно записать условие/фильтр через вертикальную черту, либо двоеточие:
+            $$\\forall x\\href{in.html}{\\in}\\href{mathbbN.html}{\\mathbb{N}}.\\href{logical_func.html}{p(x)}| x < 3  $$
+            $$\\forall x\\href{in.html}{\\in}\\href{mathbbQ.html}{\\mathbb{Q}}.\\href{logical_func.html}{p(x)}: x < 3/2$$
+            Читай: "для любого <a href="mathbbN.html">натурального</a> \\(\\href{mathbbN.html}{x}\\), который меньше трёх, верно, что \\(\\href{logical_func.html}{p(x)}\\)"<br>
+            и "для любого <a href="mathbbQ.html">рационального</a> \\(\\href{mathbbQ.html}{x}\\), который меньше чем три вторых, верно, что \\(\\href{logical_func.html}{p(x)}\\)"<br>
+            <br>
+            К примеру, утверждение "Все бабы -- стервы", или "Все женщины обладают свойством стервозности" -- это Ложь, если найдётся хотя бы одна кроткая.<br>
+            Ещё пример. Утверждение "Все мужики -- подлецы", или "Все мужчины обладают свойством подлости" -- это Ложь, если найдётся хотя бы один честный.
+            '''
+    ]
+    ,
+    name: 'exists'
+    title: 'Существует x, такой что'
+    data: [
+        title: 'Квантор существования'
+        text: '''
+            sʇsᴉx\\(\\exists \\) от слова Exists -- существует.<br><br>
+            \\(\\exists x.p(x)\\) Читай: "Существует хотябы один \\(\\href{free_varialbe.html}{x}\\), такой, что \\(\\href{logical_func.html}{p(x)}\\) == Правда"<br>
+            Эт такая хитрая <a href="logical_func.html">логическая 'функция'</a>, 'посчитав' которую, получаем либо логическую Истину, либо логическую Ложь.<br>
+            Аргумент такой <a href="logical_func.html">логической \'функции\'</a> -- другая <a href="logical_func.html">логическая \'функция\'</a>.<br>
+            
+            На <a href="free_variable.html">свободную переменную</a> \\(\\href{free_variable.html}{x}\\), можно сразу наложить ограничение, вписав откуда она взята
+            $$\\exists x\\href{in.html}{\\in}\\href{set.html}{A}.\\href{logical_func.html}{p(x)}$$
+            Можно ещё дополнять \\(\\href{logical_func.html}{p(x)}\\) условием, чтобы, к примеру, фильтровать значения <a href="free_variable.html">свободой переменной</a>.
+            Для этого достаточно записать условие/фильтр через вертикальную черту, либо двоеточие:
+            $$\\exists x\\href{in.html}{\\in}\\href{mathbbN.html}{\\mathbb{N}}.\\href{logical_func.html}{p(x)}| x < 3  $$
+            $$\\exists x\\href{in.html}{\\in}\\href{mathbbQ.html}{\\mathbb{Q}}.\\href{logical_func.html}{p(x)}: x < 3/2$$
+            Читай: "существует <a href="mathbbN.html">натуральный</a> \\(\\href{mathbbN.html}{x}\\), который меньше трёх, при котором верно, что \\(\\href{logical_func.html}{p(x)}\\)"<br>
+            и "существует <a href="mathbbQ.html">рациональный</a> \\(\\href{mathbbQ.html}{x}\\), который меньше чем три вторых, при котором верно, что \\(\\href{logical_func.html}{p(x)}\\)"<br>
+            <br>
+            К примеру, утверждение "Все бабы -- стервы", или "Все женщины обладают свойством стервозности" -- это Ложь, если найдётся хотя бы одна кроткая.<br>
+            Ещё пример. Утверждение "Все мужики -- подлецы", или "Все мужчины обладают свойством подлости" -- это Ложь, если найдётся хотя бы один честный.
+            '''
     ]
     ,
     name: 'therefore'
@@ -139,32 +231,75 @@ files: [
         text: 'Это такая логическая \'функция\', которая принимает результаты вычислений логических \'функций\' A и B<br> и возвращает логическую Правду, либо логическую Ложь<br> Выражает, что из Правды, Ложь следовать не может<br><br>К примеру, <ul><li><b>A</b>=\'пошёл дождь, когда я гулял в лесу\'</li> <li><b>B</b>=\'я весь вымок\'</li></ul><br>Если уже известно, что из-за дождя я вымок, то не мог я одновременно из-за этого же дождя не вымокнуть<br>'
     ]
     ,
+    name: 'logical_func'
+    title: 'Логическая функция'
+    data: [
+        title: 'Логическая \'функция\''
+        text: '''
+            Логическая \'функция\' -- это белиберда, которую я взял с потолка, чтобы не залезая в дебри <a href="logica.html">мат. логики</a>
+            <font color="gray">(со всеми её <b>prop</b> переменными, моделями, арностями, разного рода логиками, штопорами, инопланетянскими выражениями и т.д. и т.п.)</font>,
+            <br>
+            начать разговор про рассуждения о логических Правде и Лжи.<br><br>Свои эти логические \'функии\' я определяю как:<br>
+            <ul>
+                <li>либо Правда <font color="lightgray"> Истина [<a href="func.html">'функция'</a>, которая ничего не принимает и 'возвращает'(т.е. означает)  правду]</font></li>
+                <li>либо Ложь   <font color="lightgray">[<a href="func.html">'функция'</a>, которая ничего не принимает и 'возвращает'  ложь]</font></li>
+                <li>либо выражение, над которым мне с тобой надо подумать <font color="lightgray">(т.е. \'вычислить\')</font>, Ложь перед нами, или же Правда <font color="lightgray">[сколько хочешь логических Правд и Лжи 'принимает' и 'возвращает' одну либо Правду, либо Ложь]</font></li>
+            </ul>
+            '''
+    ]
+    ,
     name: 'iff'
     title: 'Эквивалентно'
     data: [
         title: 'Эквивалентность (A -- тогда и только тогда, когда B)'
-        text: '\\((A\\)<a href="iff.html">\\(\\Leftrightarrow\\)</a> \\(B)\\) <a href="iff.html">\\(\\iff\\)</a> \\((A\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(B\\) <a href="land.html">\\(\\land\\)</a> \\(B\\) <a href="therefore.html">\\(\\Rightarrow\\)</a> \\(A)\\)<br>Договоримся, что Истина -- это \\(1\\), а Ложь -- это \\(0\\), т.е. Ложь ничтожна, а Истина больше чем Ложь.<br>Тогда эквивалентность работает так:<br><br><img src="https://spravochnick.ru/assets/files/articles/inf56.png" alt="таблица истинности для эквивалентности">'
+        text: '\\((\\href{logical_func.html}{A}\\href{iff.html}{\\Leftrightarrow} \\href{logical_func.html}{B})\\href{iff.html}{\\iff} (\\href{logical_func.html}{A} \\href{therefore.html}{\\Rightarrow} \\href{logical_func.html}{B} \\href{land.html}{\\land} \\href{logical_func.html}{B} \\href{therefore.html}{\\Rightarrow} \\href{logical_func.html}{A})\\)<br>Договоримся, что Истина -- это \\(1\\), а Ложь -- это \\(0\\), т.е. Ложь ничтожна, а Истина больше чем Ложь.<br>Тогда эквивалентность работает так:<br><br><img src="https://spravochnick.ru/assets/files/articles/inf56.png" alt="таблица истинности для эквивалентности"><br><font color="gray">(здесь, в картинке, за знак эквивалентности приняли символ \\(\\equiv\\))</font>'
     ]
     ,
     name: 'land'
     title: 'Конъюнкция'
     data: [
         title: 'Конъюнкция A и B'
-        text: 'Договоримся, что Истина -- это 1, а Ложь -- это 0, т.е. Ложь ничтожна и Истина больше чем Ложь.<br> Тогда<br><b>К</b>онъюнкция -- эт такая логическая \'функция\', которая принимает результаты вычисления логических \'функций\' A и B<br> и возвращает меньшую из них, т.е. \\(min(A,B)\\),<br>т.е. оператор \\(\\land\\) вернёт Истину, только если <b>каждый</b> его аргумент -- Истина.'
+        text: 'Договоримся, что Истина -- это \\(\\href{mathbbN.html}{1}\\), а Ложь -- это \\(\\href{mathbbN.html}{0}\\), т.е. Ложь ничтожна и Истина больше чем Ложь.<br> Тогда<br><b>К</b>онъюнкция -- эт такая <a href="logical_func.html">логическая \'функция\'</a>, которая принимает результаты вычисления <a href="logical_func.html">логических \'функций\'</a> \\(\\href{logical_func.html}{A}\\) и \\(\\href{logical_func.html}{B}\\)<br> и возвращает меньшую из них, т.е. \\(min(\\href{logical_func.html}{A},\\href{logical_func.html}{B})\\),<br>т.е. оператор \\(\\land\\) вернёт Истину, только если <b>каждый</b> его аргумент -- Истина.'
     ]
     ,
     name: 'lor'
     title: 'Дизъюнкция'
     data: [
         title: 'Дизъюнкция A и B'
-        text: 'Договоримся, что Истина -- это 1, а Ложь -- это 0, т.е. Ложь ничтожна и Истина больше чем Ложь.<br> Тогда<br><b>Д</b>изъюнкция -- эт такая логическая \'функция\', которая принимает результаты вычисления логических \'функций\' A и B<br> и возвращает большую из них, т.е. \\(max(A, B)\\),<br>т.е. оператор \\(\\lor\\) вернёт Истину, если <b>хотя бы один</b> его аргумент -- Истина.'
+        text: 'Договоримся, что Истина -- это \\(\\href{mathbbN.html}{1}\\), а Ложь -- это \\(\\href{mathbbN.html}{0}\\), т.е. Ложь ничтожна и Истина больше чем Ложь.<br> Тогда<br><b>Д</b>изъюнкция -- эт такая <a href="logical_func.html">логическая \'функция\'</a>, которая принимает результаты вычисления <a href="logical_func.html">логических \'функций\'</a> \\(\\href{logical_func.html}{A}\\) и \\(\\href{logical_func.html}{B}\\)<br> и возвращает большую из них, т.е. \\(max(\\href{logical_func.html}{A}, \\href{logical_func.html}{B})\\),<br>т.е. оператор \\(\\lor\\) вернёт Истину, если <b>хотя бы один</b> его аргумент -- Истина.'
     ]
     ,
     name: 'func'
     title: 'Функция'
     data: [
         title: 'Функция'
-        text: 'Это отображение одного <a href="set.html">множества</a>, в другое. Я могу кинуть <a href="in.html">элемент</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a> в функцию, и она вернёт мне <a href="in.html">элемент</a> <a href="set.html">множества</a> <a href="set.html">\\(B\\)</a>.<br><br><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Function_color_example_3.svg/223px-Function_color_example_3.svg.png" alt="Function.png"><br><font size="-2">3.svg" title="через Викисклад">Function_color_example_3.gif: Wvbailey.Изначально этот файл был загружен участником Wvbailey из английский Википедияderivative work: Zerodamage</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a></font><br>Результат выполнения/вычисления функции, будет <a href="in.html">элементом</a> <a href="set.html">множества</a>, в которое указывают стрелки<br><br>Функции записывают так: \\(F(x)\\) &nbsp;&nbsp;(тут \\(F\\) -- имя функции, а \\(x\\) -- имя аргумента, который <a href="in.html">принадлежит</a> <a href="set.html">множеству</a> из которого выходят стрелки.<br><br>'
+        text: '''
+            Это отображение одного <a href="set.html">множества</a> (которое, область определений),
+            в другое <a href="set.html">множество</a> (которое, область значений).
+            Я могу \'кинуть\' <a href="in.html">элемент</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a> в функцию, и она в ответ \'плюнет\' в меня <a href="in.html">элементом</a> <a href="set.html">множества</a> <a href="set.html">\\(B\\)</a>.
+            <br>
+            <br>
+            Вот пример функции, которая сопоставляет цветной фигуре, её цвет.
+            <br>
+            На 'входящий' <a href="in.html">элемент</a> <a href="set.html">множества</a> "цветные фигуры",
+            'выдаёт' <a href="in.html">элемент</a> <a href="set.html">множества</a> <a href="https://youtu.be/YcHeC3VKgsE">"цвета"</a>
+            <br>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/df/Function_color_example_3.svg/223px-Function_color_example_3.svg.png" alt="Function.png"><br><font size="-2">3.svg" title="через Викисклад">Function_color_example_3.gif: Wvbailey.Изначально этот файл был загружен участником Wvbailey из английский Википедияderivative work: Zerodamage</a> / <a href="https://creativecommons.org/licenses/by-sa/3.0">CC BY-SA</a></font>
+            <br>
+            Результат выполнения/вычисления функции, будет <a href="in.html">элементом</a> <a href="set.html">множества</a>, в которое указывают стрелки
+            <br>
+            <br>
+            Функции записывают так: \\(F(x)\\)
+            <br>
+            <font color="gray">тут \\(F\\) -- имя функции, а \\(x\\) -- имя аргумента, который <a href="in.html">принадлежит</a> <a href="set.html">множеству</a> из которого выходят стрелки.</font>
+            <br><br><br><br><br><br><br>
+            Функции c большим числом аргументов \\(F(a, b, ...)\\) --  это цепочка из функций, которые возвращают функции.
+            <br>
+            К примеру, вот <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80_(%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)">конструктор</a> цветной фигуры
+            <br>  <img src="./img/func.png" alt="A function, that returnes a function"> <br>
+            Ты 'даёшь' ему фигуру, а он 'возвращает' тебе функцию. <br> Ты 'даёшь' этой функции цвет, а она 'возвращает' тебе цветную фигуру. 
+            <br>
+        '''
     ]
     ,
     name: 'set'
@@ -337,10 +472,18 @@ files: [
     data: [
         title: 'Замыкание множества A'
         text: '''
-            Замыканием <a href="set.html">множества</a> <a href="set.html">A</a>, называется <a href="cup.html">объединение</a> <a href="set.html">множества</a> <a href="set.html">A</a> с <a href="set.html">множеством</a> его <a href="boundary_point.html">граничных точек</a>.<br>
-            Для множества A, обозначается как \\(\\bar{A}\\)<br>
+            <center>\\(\\bar{A}=\\) <a href="set.html">\\(\\)</a> <a href="cup.html">\\(\\cup\\)</a> <a href="boundary_set.html">\\(\\partial A\\)</a></center>
             <br>
-            К примеру, замыканием <a href="set.html">множества</a> точек яблока, будет всё яблоко включая кожуру, плюс вся та дрянь, которой это яблоко натёрто
+            Замыканием <a href="set.html">множества</a> <a href="set.html">A</a>, называется
+            <a href="cup.html">объединение</a> <a href="set.html">множества</a>
+            <a href="set.html">A</a> с <a href="set.html">множеством</a> его
+            <a href="boundary_point.html">граничных точек</a>.
+            <br>
+            Для множества A, обозначается как \\(\\bar{A}\\)
+            <br>
+            <br>
+            К примеру, замыканием <a href="set.html">множества</a> точек яблока,
+            будет всё яблоко включая кожуру, плюс вся та дрянь, которой это яблоко натёрто
             '''
     ]
     ,
@@ -349,7 +492,8 @@ files: [
     data: [
         title: 'Замкнутое множество'
         text: '''
-            Если <a href="set.html">\\(A\\)</a> \\(=\\) <a href="closure_of_set.html">\\(\\bar{A}\\)</a>, то <a href="set.html">\\(A\\)</a> называется замкнутым <a href=""set.html>множеством</a>.
+            Если <a href="set.html">\\(A\\)</a> \\(=\\) <a href="closure_of_set.html">\\(\\bar{A}\\)</a>,
+            то <a href="set.html">\\(A\\)</a> называется замкнутым <a href=""set.html>множеством</a>.
             '''
     ]
     ,
@@ -358,7 +502,7 @@ files: [
     data: [
         title: 'Предельная точка'
         text: '''
-            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется предельной точкой <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, если <a href="forall.html">любая</a> её <a href="locality_x0.html">окрестность</a> <a href="in.html">содержит</a> <a href="mathbbR.html">точку</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, отличную от точки <a href="mathbbR.html">\\(x_0\\)</a>
+            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется предельной точкой <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, если <a href="forall.html">любая</a> её <a href="locality_x0.html">окрестность</a> <a href="in.html">содержит</a> <a href="mathbbR.html">точку</a> <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, отличную от точки <a href="mathbbR.html">\\(x_0\\)</a><br> Условно говоря, предельная точка -- это точка, к которой можно подобраться из <a href="set.html">множества</a>, <a href="in.html">в котором она лежит</a>
             '''
     ]
     ,
@@ -367,11 +511,33 @@ files: [
     data: [
         title: 'Изолированная точка'
         text: '''
-            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется изолированной точкой <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, если <a href="mathbbR.html">она</a> <a href="in.html">принадлежит</a> <a href="set.html">множеству</a> и не является его <a href="limit_point.html">предельной точкой</a>.
+            Точка <a href="mathbbR.html">\\(x_0\\)</a> называется изолированной точкой <a href="set.html">множества</a> <a href="set.html">\\(A\\)</a>, если <a href="mathbbR.html">она</a> <a href="in.html">принадлежит</a> <a href="set.html">множеству</a> и не является его <a href="limit_point.html">предельной точкой</a>.<br> Условно говоря, изолированная точка -- это точка к которой нельзя подобраться из <a href="set.html">множества</a> к которому она <a href="in.html">пренадлежит</a>
             '''
     ]
-    
-    
-    
-    
+
+    , ### Пределы ###
+    name: 'limit'
+    title: 'Предел'
+    data: [
+        title: 'Предел'
+        text: '''
+            <details>
+            <summary><font color="grey">Со скобками</font></summary>
+            <p>
+            $$\\color{red}(\\color{black}\\lim_{x\\to x_0} f(x) = a\\color{red})\\color{black} \\iff \\color{red}(\\color{black} \\forall U_\\varepsilon (a).\\color{violet}(\\color{black} \\exists U_\\delta (x_0).\\color{green}(\\color{yellow} ( \\color{black} x\\in U_\\delta (x_0) \\cap A \\color{yellow} ) \\color{black} \\Rightarrow \\color{yellow}(\\color{black} a\\in U_\\varepsilon (a) \\color{yellow} ) \\color{green} ) \\color{violet} ) \\color{red} ) \\color{black} $$
+            </p>
+            </details>
+            $$\\lim_{x\\to x_0} \\href{func.html}{f(x)} = \\href{mathbbR.html}{a} \\href{iff.html}{\\iff} \\href{forall.html}{\\forall} \\href{locality_x0.html}{U_\\varepsilon (a)}\\href{forall.html}{.} \\href{exists.html}{\\exists} \\href{locality_x0.html}{U_\\delta (x_0)}. \\href{mathbbR.html}{x}\\href{in.html}{\\in} \\href{locality_x0.html}{U_\\delta (x_0)} \\href{cap.html}{\\cap} \\href{set.html}{A} \\href{therefore.html}{\\Rightarrow} \\href{mathbbR.html}{a}\\href{in.html}{\\in} \\href{locality_x0.html}{U_\\varepsilon (a)} $$
+            
+            \\(\\href{mathbbR.html}{a}\\) -- эт придел функции \\(\\href{func.html}{f(x)}\\), при \\(\\href{mathbbR.html}{x}\\) стремящемся к \\(\\href{mathbbR.html}{x_0}\\),<br>
+            тогда и только тогда,<br>
+            когда для любой \\(\\href{locality_x0}{U_\\varepsilon(a)}\\)<font color="lightgray">(окрестности точки-результата вычисления)</font>,<br>
+            существует такая \\(\\href{locality_x0}{U_\\delta(x_0)}\\) <font color="lightgray">(окрестность точки-аргумента)</font>,<br>
+            что<br>
+            из того, что \\(\\href{mathbbR.html}{x}\\) находится в пересечении области определения \\(\\href{set.html}{A}\\) функции и \\(\\href{locality_x0.html}{U_\\delta(x_0)}\\) <font color="lightgray">(окрестности точки-аргумента)</font><br>
+            следует, что \\(\\href{func.html}{f(x)}\\) лежит в \\(\\href{locality_x0.html}{U_\\varepsilon(a)}\\)<font color="lightgray">(окрестности точки-результата вычисления)</font><br>
+            <img src="./img/limit.png" alt="limit_graphic"><br>
+            '''
+    ]
+
     ]

@@ -33,19 +33,40 @@ height: inherit;
 <div class="w3-main" style="margin-left:250px">
     <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
-    <h1 class="w3-text-teal"><a name="subtitle0"></a>Рациональные \(\mathbb{Q}\)</h1>
-    <p>\(\mathbb{Q}uotient\) значит -- доля/отношение/частное:
-\(...-\frac{2}{4},-\frac{1}{4},\frac{0}{4},\frac{1}{4},\frac{2}{4},\frac{3}{4},\frac{4}{4}...\)
-<br>
-Выражают пропорции и отвечают на вопрос:
-'<a href="mathbbZ.html">Сколько я должен/сколько есть</a> из
-<a href="mathbbN.html">скольких</a> частей?'</p>
+    <h1 class="w3-text-teal"><a name="subtitle0"></a>Предел</h1>
+    <p><details>
+<summary><font color="grey">Со скобками</font></summary>
+<p>
+$$\color{red}(\color{black}\lim_{x\to x_0} f(x) = a\color{red})\color{black} \iff \color{red}(\color{black} \forall U_\varepsilon (a).\color{violet}(\color{black} \exists U_\delta (x_0).\color{green}(\color{yellow} ( \color{black} x\in U_\delta (x_0) \cap A \color{yellow} ) \color{black} \Rightarrow \color{yellow}(\color{black} a\in U_\varepsilon (a) \color{yellow} ) \color{green} ) \color{violet} ) \color{red} ) \color{black} $$
+</p>
+</details>
+$$\lim_{x\to x_0} \href{func.html}{f(x)} = \href{mathbbR.html}{a} \href{iff.html}{\iff} \href{forall.html}{\forall} \href{locality_x0.html}{U_\varepsilon (a)}\href{forall.html}{.} \href{exists.html}{\exists} \href{locality_x0.html}{U_\delta (x_0)}. \href{mathbbR.html}{x}\href{in.html}{\in} \href{locality_x0.html}{U_\delta (x_0)} \href{cap.html}{\cap} \href{set.html}{A} \href{therefore.html}{\Rightarrow} \href{mathbbR.html}{a}\href{in.html}{\in} \href{locality_x0.html}{U_\varepsilon (a)} $$
+
+\(\href{mathbbR.html}{a}\) -- эт придел функции \(\href{func.html}{f(x)}\), при \(\href{mathbbR.html}{x}\) стремящемся к \(\href{mathbbR.html}{x_0}\),<br>
+тогда и только тогда,<br>
+когда для любой \(\href{locality_x0}{U_\varepsilon(a)}\)<font color="lightgray">(окрестности точки-результата вычисления)</font>,<br>
+существует такая \(\href{locality_x0}{U_\delta(x_0)}\) <font color="lightgray">(окрестность точки-аргумента)</font>,<br>
+что<br>
+из того, что \(\href{mathbbR.html}{x}\) находится в пересечении области определения \(\href{set.html}{A}\) функции и \(\href{locality_x0.html}{U_\delta(x_0)}\) <font color="lightgray">(окрестности точки-аргумента)</font><br>
+следует, что \(\href{func.html}{f(x)}\) лежит в \(\href{locality_x0.html}{U_\varepsilon(a)}\)<font color="lightgray">(окрестности точки-результата вычисления)</font><br>
+<img src="./img/limit.png" alt="limit_graphic"><br></p>
     </div>
     <div class="w3-third w3-container">
 
 </div>
 </div>
-    
+    <!-- Pagination -->
+<div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+        <a class="w3-button w3-hover-black" href="boundary_point.html">7</a>
+        <a class="w3-button w3-hover-black" href="boundary_set.html">8</a>
+        <a class="w3-button w3-hover-black" href="closure_of_set.html">9</a>
+        <a class="w3-button w3-hover-black" href="closed_set.html">10</a>
+        <a class="w3-button w3-hover-black" href="limit_point.html">11</a>
+        <a class="w3-button w3-hover-black" href="isolated_point.html">12</a>
+        <a class="w3-button w3-black" href="#">13</a>
+    </div>
+</div>
 
     <footer id="myFooter">
         <div class="w3-container w3-theme-l2 w3-padding-32">

@@ -34,7 +34,22 @@ height: inherit;
     <div class="w3-row w3-padding-64">
     <div class="w3-twothird w3-container">
     <h1 class="w3-text-teal"><a name="subtitle0"></a>Квантор всеобщности</h1>
-    <p>\(ll\forall\) от слова All -- всё.<br>\(\forall x.p(x)\) Читай: "для всех \(x\), верно, что \(p(x)\) -- это правда"<br>Эт такая хитрая логическая 'функция', 'посчитав' которую, получаем либо логическую Истину, либо логическую Ложь.<br>Аргумент такой логической 'функции' -- другая логическая 'функция'.<br>Про свободную переменную \(x\), можно сразу писать, откуда она взята<br><center>\(\forall x\) <a href="in.html">\(\in\)</a> \(A.p(x)\)</center><br>Иожно ещё дополнять \(p(x)\) новым условием, либо фильтром <a href="free_variable.html">свободной переменной</a>, записыв условие/фильтр через вертикальную черту, либо двоеточие:<br><center>\(\forall x\) <a href="in.html">\(\in\)</a> <a href="mathbbN">\(\mathbb{N}\)</a> \(.p(x)| x < 3\)</center><br><center>\(\forall x\) <a href="in.html">\(\in\)</a> <a href="mathbbQ">\(\mathbb{Q}\)</a> \(.p(x): x < 3/2\)</center><br>Читай "\(x\), который меньше трёх" и "\(x\), который меньше чем три вторых"<br><br>К примеру, утверждение "Все бабы -- стервы", или "Все женщины обладают свойством стервозности" -- это Ложь, если найдётся хотя бы одна кроткая</p>
+    <p>\(ll\forall\) от слова All -- всё.<br>
+\(\forall x.p(x)\) Читай: "для всех \(\href{free_varialbe.html}{x}\), верно, что \(\href{logical_func.html}{p(x)}\) == Правда"<br>
+Эт такая хитрая <a href="logical_func.html">логическая 'функция'</a>, 'посчитав' которую, получаем либо логическую Истину, либо логическую Ложь.<br>
+Аргумент такой <a href="logical_func.html">логической 'функции'</a> -- другая <a href="logical_func.html">логическая 'функция'</a>.<br>
+
+На <a href="free_variable.html">свободную переменную</a> \(\href{free_variable.html}{x}\), можно сразу наложить ограничение, вписав откуда она взята
+$$\forall x\href{in.html}{\in}\href{set.html}{A}.\href{logical_func.html}{p(x)}$$
+Можно ещё дополнять \(\href{logical_func.html}{p(x)}\) условием, чтобы, к примеру, фильтровать значения <a href="free_variable.html">свободой переменной</a>.
+Для этого достаточно записать условие/фильтр через вертикальную черту, либо двоеточие:
+$$\forall x\href{in.html}{\in}\href{mathbbN.html}{\mathbb{N}}.\href{logical_func.html}{p(x)}| x < 3  $$
+$$\forall x\href{in.html}{\in}\href{mathbbQ.html}{\mathbb{Q}}.\href{logical_func.html}{p(x)}: x < 3/2$$
+Читай: "для любого <a href="mathbbN.html">натурального</a> \(\href{mathbbN.html}{x}\), который меньше трёх, верно, что \(\href{logical_func.html}{p(x)}\)"<br>
+и "для любого <a href="mathbbQ.html">рационального</a> \(\href{mathbbQ.html}{x}\), который меньше чем три вторых, верно, что \(\href{logical_func.html}{p(x)}\)"<br>
+<br>
+К примеру, утверждение "Все бабы -- стервы", или "Все женщины обладают свойством стервозности" -- это Ложь, если найдётся хотя бы одна кроткая.<br>
+Ещё пример. Утверждение "Все мужики -- подлецы", или "Все мужчины обладают свойством подлости" -- это Ложь, если найдётся хотя бы один честный.</p>
     </div>
     <div class="w3-third w3-container">
 
