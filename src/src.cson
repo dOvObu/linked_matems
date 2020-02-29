@@ -68,9 +68,9 @@ files: [
         ,
             title: '16 определений предела'
             url: '16_limits'
-        ,
-            title: ''
-            url: ''
+        #,
+        #    title: ''
+        #    url: ''
         ,
             title: 'Непрерывные функции'
         ,
@@ -545,6 +545,7 @@ files: [
             следует, что \\(\\href{func.html}{f(x)}\\) лежит в \\(\\href{locality_x0.html}{U_\\varepsilon(a)}\\)<font color="lightgray">(окрестности точки-результата вычисления)</font><br>
             <img src="./img/limit.png" alt="limit_graphic"><br>
             <br>
+            Если в привёдйнном определении, <a href="locality_x0.html">\\(\\varepsilon\\)-окрестности</a> заменить на <a href="vicinity_x0.html">окрестности</a>, получится эквивалентное определение.
             К слову. Как на место \\(\\href{mathbbR.html}{x_0}\\), так и на место \\(\\href{mathbbR.html}{a}\\), можно ставить как конечные значения, так и бесконечные (\\(+\\infty, -\\infty, \\infty\\)).<br>
             То есть на \\(2\\) места, \\(4\\) варианта. Это \\(2^4=16\\) вариантов определения в одном.
             '''
@@ -557,13 +558,13 @@ files: [
         text: '''
             '''
     ]
-    ,
-    name: ''
-    title:''
-    data: [
-        title: ''
-        text: '''
-            '''
-    ]
+    #,
+    #name: ''
+    #title:''
+    #data: [
+    #    title: ''
+    #    text: '''
+    #        '''
+    #]
 
     ]
