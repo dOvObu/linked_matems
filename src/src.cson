@@ -89,8 +89,31 @@ files: [
     name: 'linear'
     title: 'Линейная'
     pos: 'navbar'
+    data: [
+        title: 'Из книги "Курс высшей алгебры" А.Г.Курош'
+        links: [
+            title: 'СЛАУ и определители'
+        ,
+            title: 'СЛАУ'
+            url:  'slau'
+        ,
+            title: 'Матрица'
+            url: 'matrix'
+        ,
+            title: 'Главная диагональ матрицы'
+            url: 'diagonal'
+        ,
+            title: 'Единичная матрица'
+            url:  'Ematrix'
+        ,
+            title: 'Несовместная СЛАУ'
+            url:  'unjoint_slau'
+        ,
+            title: 'Совместная СЛАУ'
+            url:  'joint_slau'
+        ]
+    ]
     ,
-
 
     name: 'mathbbN'
     title: 'Натуральные'
