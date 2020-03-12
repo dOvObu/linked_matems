@@ -1,0 +1,159 @@
+files: [
+    name: 'slau'
+    title: 'СЛАУ'
+    data: [
+        title: 'СЛАУ'
+        text: '''
+            система линейных уравнений, от слова "линия" (уравниение первой степени, с двумя неизвестными -- \\(x\\) и \\(y\\))
+            $$\\begin{eqnarray}
+                a_{11} x_1 + a_{12} x_2 + ... + a_{1n} x_n = b_0 \\nonumber
+                \\\\
+                a_{21} x_1 + a_{22} x_2 + ... + a_{2n} x_n = b_2\\nonumber
+                \\\\
+                ............................. \\nonumber
+                \\\\
+                a_{s1} x_1 + a_{s2} x_2 + ... + a_{sn} x_n = b_0 \\nonumber
+            \\end{eqnarray}$$
+            , где<ul>
+            <li>\\(s\\) -- число уравнений,</li>
+            <li>\\(n\\) -- число неизвестных,</li>
+            <li>\\(x_1, x_2, ... , x_n\\) -- неизвестные
+            <li>\\(a_{11}, a_{12}, ..., a_{1n}, ... , a_{sn}\\) -- коэффициенты при неизвестных,</li>
+            <li>\\(b_1, b_2, ... , b_s\\) -- коэффициенты свободные (от домнажения на неизвестные члены СЛАУ)</li>
+            </ul><br>
+        '''
+    ]
+    ,
+    name: 'matrix'
+    title: 'Матрица'
+    data: [
+        title: 'Матрица'
+        text: '''
+            коэффициенты \\(a_{11},a_{12}, ... ,a_{1n}, ... , a_{s1}, ... , a_{sn}\\)
+            (где \\(s\\) -- число уравнений, а \\(n\\) -- число неизвестных),
+            при неизвестных \\(x_1,x_2, ... , x_n\\), из <a href="slau.html">системы линейных уравнений</a>:
+            $$\\begin{eqnarray}
+                a_{11} x_1 + a_{12} x_2 + ... + a_{1n} x_n = b_0 \\nonumber
+                \\\\
+                a_{21} x_1 + a_{22} x_2 + ... + a_{2n} x_n = b_2\\nonumber
+                \\\\
+                ............................. \\nonumber
+                \\\\
+                a_{s1} x_1 + a_{s2} x_2 + ... + a_{sn} x_n = b_0 \\nonumber
+            \\end{eqnarray}$$
+            записанные в прямоугольную таблицу
+            $$\\left(\\begin{eqnarray}
+                a_{11} a_{12} ... a_{1n} \\nonumber
+                \\\\
+                a_{21} a_{22} ... a_{2n} \\nonumber
+                \\\\
+                ........... \\nonumber
+                \\\\
+                a_{s1} a_{s2} ... a_{sn} \\nonumber
+            \\end{eqnarray}\\right)$$
+            <br>
+            '''
+    ]
+    ,
+    name: 'diagonal'
+    title: 'Главная диагональ матрицы'
+    data: [
+        title: 'Главная диагональ матрицы'
+        text: 'главная диагональ <a href="matrix.html">матрицы</a> -- это её элементы \\(a_{ij}\\), у которых \\(i=j\\)<br>'
+    ]
+    ,
+    name: 'rect_matrix'
+    title: 'Квадратная матрица'
+    data: [
+        title: 'Квадратная матрица <a href="order_of_matrix.html">порядка</a> \\(n\\)'
+        text: 'это <a href="matrix.html">матрица</a>, которая получилась из <a href="slau.html">СЛАУ</a>, в котором, число уравнений равно числу неизвестных'
+    ]
+    ,
+    name: 'order_of_rect_matrix'
+    title: 'Порядок квадратной матрицы'
+    data: [
+        title: 'Порядок <a href="rect_matrix.html">квадратной</a> <a href="matrix.html">матрицы</a>'
+        text: 'это число уравнений, или число неизвестных в <a href="slau.html">СЛАУ</a> из которого <a href="rect_matrix.html">квадратная</a> <a href="matrix.html">матрица</a> получилась'
+    ]
+    ,
+    name: 'Ematrix'
+    title: 'Единичная матрица'
+    data: [
+        title: 'Единичная матрица'
+        text: '''
+            это <a href="rect_matrix.html">квадратная</a> <a href="matrix.html">матрица</a> <a href="diagonal.html">главная диагональ</a> которой состоит из единиц, все же остальные её элементы равны нулю
+            $$\\left(\\begin{eqnarray}
+                1 0 0 ... 0 \\nonumber
+                \\\\
+                0 1 0 ... 0 \\nonumber
+                \\\\
+                0 0 1 ... 0 \\nonumber
+                \\\\
+                ........... \\nonumber
+                \\\\
+                0 0 0 ... 1 \\nonumber
+            \\end{eqnarray}\\right)$$
+            '''
+    ]
+    ,
+    name: 'slau_result'
+    title: 'Решение СЛАУ'
+    data: [
+        title: 'Решение <a href="slau.html">СЛАУ</a>'
+        text: '''
+            это система из чисел \\(k_1, k_2, ... k_n\\), после подмены неизвестных \\(x_1, x_2, ... x_n\\) которыми, каждое уравнение из <a href="slau.html">СЛАУ</a> становятся тождеством, т.е. <a href="logical_func.html">"возвращает" логическую Истину</a>
+        '''
+    ]
+    ,
+    name: 'joint_slau'
+    title: 'Совместная СЛАУ'
+    data: [
+        title: 'Совместная <a href="slau.html">СЛАУ</a>'
+        text: '''
+            это <a href="slau.html">СЛАУ</a>, у которой есть хотя-бы одно <a href="slau_result.html">решение</a><br>
+            Делятся на <a href="defined_slau.html">определённые</a> и <a href="undefined_slau.html">неопределённые</a>.
+        '''
+    ]
+    ,
+    name: 'unjoint_slau'
+    title: 'Несовместная СЛАУ'
+    data: [
+        title: 'Несовместная <a href="slau.html">СЛАУ</a>'
+        text: '''
+            это <a href="slau.html">СЛАУ</a>, у которой нет ни одного <a href="slau_result.html">решения</a><br>
+            К примеру, $$\\begin{eqnarray}
+                x_1 + 5 x_2 = 1 \\nonumber
+                \\\\
+                x_1 + 5 x_2 = 7\\nonumber
+            \\end{eqnarray}$$ Одно и то же, равно разным свободным членам 1 и 7. Такого быть не может.
+        '''
+    ]
+    ,
+    name: 'defined_slau'
+    title: 'Определённая СЛАУ'
+    data: [
+        title: 'Определённая <a href="slau.html">СЛАУ</a>'
+        text: '''
+            это <a href="slau.html">СЛАУ</a>, у которой есть только одно <a href="slau_result.html">решение</a><br>
+            К примеру, $$\\begin{eqnarray}
+                x_1 + 2 x_2 = 7 \\nonumber
+                \\\\
+                x_1 + x_2 = 4\\nonumber
+            \\end{eqnarray}$$ Тут просто \\(x_2 = 4 - x_1\\)<br> \\(4 - x_2 + 2 x_2 = 7\\)<br> \\(x_2 = 3\\)<br> \\(x_1 + 3 = 4\\)<br> \\(x_1 = 1\\)<br><br> решение одно единственное
+        '''
+    ]
+    ,
+    name: 'undefined_slau'
+    title: 'Совместная СЛАУ'
+    data: [
+        title: 'Совместная <a href="slau.html">СЛАУ</a>'
+        text: '''
+            это <a href="slau.html">СЛАУ</a>, у которой есть бесконечно много <a href="slau_result.html">решений</a><br>
+            К примеру, $$\\begin{eqnarray}
+                3 x_1 + x_2 = 1 \\nonumber
+                \\\\
+                6 x_1 + 2 x_2 = 2\\nonumber
+            \\end{eqnarray}$$ Пусть \\(x_1\\) -- это любое число \\(k\\), тогда \\(x_2 = 3 k - 1\\)
+        '''
+    ]
+]

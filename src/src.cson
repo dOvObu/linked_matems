@@ -149,7 +149,7 @@ files: [
     data: [
         title: 'Вещественные \\(\\mathbb{R}\\)'
         text: '''
-            \\(\\mathbb{R}eal\\)ьные/вещественные числа
+            \\(\\mathbb{R}eal\\)ьные/вещественные/действительные числа
             <br>
             Выражают пропорции <a href="mathbbQ.html">познаваемые</a> и
             <a href="mathbbI.html">непознаваемые</a> до конца.
@@ -558,6 +558,7 @@ files: [
         text: '''
             $$ \\lim_{x\\to x_0} f(x) = a \\iff \\forall\\varepsilon > 0. \\exists\\delta_\\varepsilon. |x - x_0| < \\delta \\Rightarrow |f(x) - a| < \\varepsilon $$
             '''
+        small_img: '<img src="./img/lim1.png">'
         ,
         title: '\\(x_0 == +\\infty\\)'
         text: '''

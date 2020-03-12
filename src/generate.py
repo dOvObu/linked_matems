@@ -5,6 +5,9 @@ list_of_lists = []
 with open('src.cson', 'rb') as fin:
     model = cson.load(fin)
 
+with open('algebra_kurosh.cson', 'rb') as fin:
+    model['files'] += cson.load(fin)['files']
+
 with open('theme.cson', 'rb') as fin:
     theme = cson.load(fin)
 
