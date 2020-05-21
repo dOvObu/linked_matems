@@ -92,7 +92,7 @@ files: [
     data: [
         title: 'Из книги "Курс высшей алгебры" А.Г.Курош'
         links: [
-            title: 'СЛАУ и определители'
+            title: 'СЛАУ и определители' ###################################################
         ,
             title: 'СЛАУ'
             url:  'slau'
@@ -111,6 +111,93 @@ files: [
         ,
             title: 'Совместная СЛАУ'
             url:  'joint_slau'
+        ,
+            title: 'Перестановки и подстановки' ############################################
+        ,
+            title: 'Перестановка из \\(n\\) элементов'
+            url: 'permutation'
+        ,
+            title: 'Транспозиция'
+            url: 'transposition'
+        ,
+            title: 'О чётности'
+            url: 'T_parity'
+        ,
+            title: 'О колличестве чётных перестановок'
+            url: 'T_even_permutation_count'
+        ,
+            title: 'Подстановка'
+            url: 'substitution'
+        ,
+            title: 'Чётная подстановка'
+            url: 'even_substitution'
+        ,
+            title: 'О колличестве чётных подстановок'
+            url: 'T_even_substitution_count'
+        ,
+            title: 'Произведение подстановок'
+            url: 'mul_of_substitutions'
+        ,
+            title: 'Произведение транспозиций'
+            url: 'mul_of_transpositions'
+        ,
+            title: 'О чётности подстановки по произведению транспозиций'
+            url: 'T_even_substitution_by_mul_of_transposition'
+        ,
+            title: 'Циклическая подстановка'
+            url: 'cyclic_substitution'
+        ,
+            title: 'О разложении в циклические подстановки'
+            url: 'T_substitution_to_mul_of_cyclic_substitutions'
+        ,
+            title: 'Декремент'
+            url: 'decrement'
+        ,
+            title: 'О чётности декремента'
+            url: 'T_even_decrement'
+        ,
+            title: 'Определитель' #########################################################
+        ,
+            title: 'Квадратной матрицы 2-го порядка'
+            url: 'det_mat_of_2_order'
+        ,
+            title: 'Квадратной матрицы 3-го порядка'
+            url: 'det_mat_of_3_order'
+        ,
+            title: 'Матрицы n-го порядка'
+            url: 'det_mat_of_n_order'
+        ,
+            title: 'Транспонирование матрицы'
+            url: 'mat_transpose'
+        ,
+            title: 'Свойства определителя' ################################################
+        ,
+            title: '<i>свободно кружится</i>'
+            url: 'det_property_1'
+        ,
+            title: '<i>зануляется пустой строкой</i>'
+            url: 'det_property_2'
+        ,
+            title: '<i>переживает перестановку соседей</i>'
+            url: 'det_property_3'
+        ,
+            title: '<i>зануляется близнецами</i>'
+            url: 'det_property_4'
+        ,
+            title: '<i>с множителем от строки</i>'
+            url: 'det_property_5'
+        ,
+            title: '<i>зануляется пропорциональными</i>'
+            url: 'det_property_6'
+        ,
+            title: '7'
+            url: 'det_property_7'
+        ,
+            title: '8'
+            url: 'det_property_8'
+        ,
+            title: '9'
+            url: 'det_property_9'
         ]
     ]
     ,
@@ -238,7 +325,7 @@ files: [
             \\(\\exists x.p(x)\\) Читай: "Существует хотябы один \\(\\href{free_varialbe.html}{x}\\), такой, что \\(\\href{logical_func.html}{p(x)}\\) == Правда"<br>
             Эт такая хитрая <a href="logical_func.html">логическая 'функция'</a>, 'посчитав' которую, получаем либо логическую Истину, либо логическую Ложь.<br>
             Аргумент такой <a href="logical_func.html">логической \'функции\'</a> -- другая <a href="logical_func.html">логическая \'функция\'</a>.<br>
-            
+
             На <a href="free_variable.html">свободную переменную</a> \\(\\href{free_variable.html}{x}\\), можно сразу наложить ограничение, вписав откуда она взята
             $$\\exists x\\href{in.html}{\\in}\\href{set.html}{A}.\\href{logical_func.html}{p(x)}$$
             Можно ещё дополнять \\(\\href{logical_func.html}{p(x)}\\) условием, чтобы, к примеру, фильтровать значения <a href="free_variable.html">свободой переменной</a>.
@@ -326,7 +413,7 @@ files: [
             <br>
             К примеру, вот <a href="https://ru.wikipedia.org/wiki/%D0%9A%D0%BE%D0%BD%D1%81%D1%82%D1%80%D1%83%D0%BA%D1%82%D0%BE%D1%80_(%D0%BE%D0%B1%D1%8A%D0%B5%D0%BA%D1%82%D0%BD%D0%BE-%D0%BE%D1%80%D0%B8%D0%B5%D0%BD%D1%82%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%BD%D0%BE%D0%B5_%D0%BF%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%BC%D0%BC%D0%B8%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B5)">конструктор</a> цветной фигуры
             <br>  <img src="./img/func.png" alt="A function, that returnes a function"> <br>
-            Ты 'даёшь' ему фигуру, а он 'возвращает' тебе функцию. <br> Ты 'даёшь' этой функции цвет, а она 'возвращает' тебе цветную фигуру. 
+            Ты 'даёшь' ему фигуру, а он 'возвращает' тебе функцию. <br> Ты 'даёшь' этой функции цвет, а она 'возвращает' тебе цветную фигуру.
             <br>
         '''
     ]
@@ -558,7 +645,7 @@ files: [
             </p>
             </details>
             $$\\lim_{x\\to x_0} \\href{func.html}{f(x)} = \\href{mathbbR.html}{a} \\href{iff.html}{\\iff} \\href{forall.html}{\\forall} \\href{locality_x0.html}{U_\\varepsilon (a)}\\href{forall.html}{.} \\href{exists.html}{\\exists} \\href{locality_x0.html}{U_\\delta (x_0)}. \\href{mathbbR.html}{x}\\href{in.html}{\\in} \\href{locality_x0.html}{U_\\delta (x_0)} \\href{cap.html}{\\cap} \\href{set.html}{A} \\href{therefore.html}{\\Rightarrow} \\href{mathbbR.html}{a}\\href{in.html}{\\in} \\href{locality_x0.html}{U_\\varepsilon (a)} $$
-            
+
             \\(\\href{mathbbR.html}{a}\\) -- эт придел функции \\(\\href{func.html}{f(x)}\\), при \\(\\href{mathbbR.html}{x}\\) стремящемся к \\(\\href{mathbbR.html}{x_0}\\),<br>
             тогда и только тогда,<br>
             когда для любой \\(\\href{locality_x0}{U_\\varepsilon(a)}\\)<font color="lightgray">(окрестности точки-результата вычисления)</font>,<br>
