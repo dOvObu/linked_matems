@@ -30,7 +30,7 @@ sidebar:
         '<a class="w3-bar-item w3-button w3-hover-black" href="{0[url]}">{0[name]}</a>'
 
 main:
-    template: """    
+    template: """
         <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
         <div class="w3-main" style="margin-left:250px">
             {0[blocks]}
@@ -87,7 +87,7 @@ main:
             """
         active: '<a class="w3-button w3-black" href="#">{0[num]}</a>'
         inactive: '<a class="w3-button w3-hover-black" href="{0[url]}.html">{0[num]}</a>'
-        
+
 
 header: """
     <!DOCTYPE html>
@@ -110,7 +110,7 @@ header: """
     bottom: 0;
     height: inherit;
     }
-    myFooter { bottom: 0; }
+    .myFooter { flex-shrink: 0; }
     </style>
     <body>
     """
