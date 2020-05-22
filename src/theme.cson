@@ -110,6 +110,7 @@ header: """
     bottom: 0;
     height: inherit;
     }
+    myFooter { bottom: 0; }
     </style>
     <body>
     """

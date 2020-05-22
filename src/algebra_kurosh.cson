@@ -111,7 +111,10 @@ files: [
         title: 'Совместная <a href="slau.html">СЛАУ</a>'
         text: '''
             это <a href="slau.html">СЛАУ</a>, у которой есть хотя-бы одно <a href="slau_result.html">решение</a><br>
-            Делятся на <a href="defined_slau.html">определённые</a> и <a href="undefined_slau.html">неопределённые</a>.
+            Делятся на <a href="defined_slau.html">определённые</a> и <a href="undefined_slau.html">неопределённые</a>.<br><br>
+
+            К примеру, если уравнения описывают прямые, или плоскости (сколько пересечений, столько и решений)<br>
+            <img src="http://www.tepka.ru/geometriya_10-11/89.jpg" alt="Рисунок с пересекающимися прямыми и плоскостями">
         '''
     ]
     ,
@@ -125,7 +128,13 @@ files: [
                 x_1 + 5 x_2 = 1 \\nonumber
                 \\\\
                 x_1 + 5 x_2 = 7\\nonumber
-            \\end{eqnarray}$$ Одно и то же, равно разным свободным членам 1 и 7. Такого быть не может.
+            \\end{eqnarray}$$ Одно и то же, равно разным свободным членам 1 и 7. Такого быть не может.<br><br>
+
+            К примеру, если уравнения второго порядка и описывают прямые (сколько пересечений, столько и решений)<br>
+            <img src="https://ykl-res.azureedge.net/14e0fd83-b8c8-44e2-b58e-8e4b6e8e24d4/Paral_neparal.png" alt="Рисунок параллельных прямых"><br>
+            или если уравнения третьего порядка и описывают плоскости<br>
+            <img src="https://i1.wp.com/videouroki.net/videouroki/conspekty/geom10/10-paralliel-nyie-ploskosti.files/image002.gif" alt="Рисунок параллельных плоскостей"><br>
+            и т.д.
         '''
     ]
     ,
@@ -139,14 +148,20 @@ files: [
                 x_1 + 2 x_2 = 7 \\nonumber
                 \\\\
                 x_1 + x_2 = 4\\nonumber
-            \\end{eqnarray}$$ Тут просто \\(x_2 = 4 - x_1\\)<br> \\(4 - x_2 + 2 x_2 = 7\\)<br> \\(x_2 = 3\\)<br> \\(x_1 + 3 = 4\\)<br> \\(x_1 = 1\\)<br><br> решение одно единственное
+            \\end{eqnarray}$$ Тут просто \\(x_2 = 4 - x_1\\)<br> \\(4 - x_2 + 2 x_2 = 7\\)<br> \\(x_2 = 3\\)<br> \\(x_1 + 3 = 4\\)<br> \\(x_1 = 1\\)<br><br> решение одно единственное<br><br>
+
+            К примеру, если уравнения второго порядка и описывают прямые (сколько пересечений, столько и решений)<br>
+            <img src="https://ykl-res.azureedge.net/14e0fd83-b8c8-44e2-b58e-8e4b6e8e24d4/Paral_neparal.png" alt="Рисунок параллельных прямых"><br>
+            или если уравнения третьего порядка и описывают три и более плоскостей<br>
+            <img src="https://graph.power.nstu.ru/wolchin/umm/eskd/eskd/GOST/2_305/sist_coord_IG/pic01/img/sist_IG_01.gif" alt="Плоскости пересеклись в одной точке"><br>
+            и т.д.
         '''
     ]
     ,
     name: 'undefined_slau'
-    title: 'Совместная СЛАУ'
+    title: 'Неопределённая СЛАУ'
     data: [
-        title: 'Совместная <a href="slau.html">СЛАУ</a>'
+        title: 'Неопределённая <a href="slau.html">СЛАУ</a>'
         text: '''
             это <a href="slau.html">СЛАУ</a>, у которой есть бесконечно много <a href="slau_result.html">решений</a><br>
             К примеру, $$\\begin{eqnarray}
@@ -156,4 +171,6 @@ files: [
             \\end{eqnarray}$$ Пусть \\(x_1\\) -- это любое число \\(k\\), тогда \\(x_2 = 3 k - 1\\)
         '''
     ]
+    ,
+    name: ''
 ]
